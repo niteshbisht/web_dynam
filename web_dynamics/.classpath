@@ -22,7 +22,7 @@
 	<classpathentry exported="true" kind="lib" path="/home/nitesh/.gradle/caches/modules-2/files-2.1/org.apache.lucene/lucene-grouping/4.10.2/4adef4d65109c7dbd6a70c96cd67822b348734f5/lucene-grouping-4.10.2.jar" sourcepath="/home/nitesh/.gradle/caches/modules-2/files-2.1/org.apache.lucene/lucene-grouping/4.10.2/43b7469aa3eb4d1ac12916bd1a4b17aabdfc24b2/lucene-grouping-4.10.2-sources.jar"/>
 	<classpathentry exported="true" kind="lib" path="/home/nitesh/.gradle/caches/modules-2/files-2.1/org.apache.lucene/lucene-spatial/4.10.2/326efe73adcc51115b53e31c71f5fc659ae48636/lucene-spatial-4.10.2.jar" sourcepath="/home/nitesh/.gradle/caches/modules-2/files-2.1/org.apache.lucene/lucene-spatial/4.10.2/85a0c25760f90014abc6abea3ee888caf23e7f09/lucene-spatial-4.10.2-sources.jar"/>
 	<classpathentry exported="true" kind="lib" path="/home/nitesh/.gradle/caches/modules-2/files-2.1/com.spatial4j/spatial4j/0.4.1/4234d12b1ba4d4b539fb3e29edd948a99539d9eb/spatial4j-0.4.1.jar" sourcepath="/home/nitesh/.gradle/caches/modules-2/files-2.1/com.spatial4j/spatial4j/0.4.1/c51cd6b83293a5e26993bd9848e2766654dfdddb/spatial4j-0.4.1-sources.jar"/>
-	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/J2SE-1.4">
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/jdk1.7.0_21">
 		<attributes>
 			<attribute name="owner.project.facets" value="java"/>
 		</attributes>
