@@ -100,6 +100,7 @@
 						</form>
 					</div>
 					<!-- ENDS search -->
+				<a href="./login.jsp"> proceed to login</a>
 				</div>
 				<!-- ENDS wrapper-header -->					
 			</div>
@@ -140,6 +141,7 @@
 								</ul>
 							</li>
 							<li><a href="contact.html">Contact<span class="subheader">Get in touch</span></a></li>
+							<li><a href="./login.jsp">Login<span class="subheader">Proceed to Secure</span></a></li>
 						</ul>
 						<!-- Navigation -->
 					</div>

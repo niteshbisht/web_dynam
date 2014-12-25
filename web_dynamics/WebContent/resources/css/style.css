@@ -218,6 +218,11 @@ body {
 	color: #fff;
 }
 
+#nav>li ul li a:hover{
+	background: #000;
+	color: #fff;
+}
+
 #nav>li ul li:last-child a:hover{ /* last item its rounded at bottom */
 	border-radius: 0px 0px 10px 10px;
 	-moz-border-radius: 0px 0px 10px 10px;
