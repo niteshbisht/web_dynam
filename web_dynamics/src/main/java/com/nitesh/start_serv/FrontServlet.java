@@ -43,7 +43,7 @@ public class FrontServlet extends HttpServlet {
 	 */
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		System.out.println("sending to home page");
-		response.sendRedirect("./resources/jsp/home.jsp");
+		response.sendRedirect("./resources/jsp/index.jsp");
 	}
 
 	/**
