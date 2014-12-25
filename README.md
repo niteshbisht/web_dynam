@@ -1,2 +1,2 @@
-my_web_dynam
-============
+web_dynam
+=========
