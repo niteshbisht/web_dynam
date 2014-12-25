@@ -21,7 +21,9 @@ public class FrontServlet extends HttpServlet {
      * @see HttpServlet#HttpServlet()
      */
     public FrontServlet() {
+    	
         super();
+        System.out.println("I am inside");
         // TODO Auto-generated constructor stub
     }
     
