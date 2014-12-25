@@ -29,12 +29,12 @@ public class FrontServlet extends HttpServlet {
     private String dbName="";
     private String dbPassword="";
 
-    public void init(ServletConfig config) throws ServletException  {
+    /*public void init(ServletConfig config) throws ServletException  {
       super.init(config);
       ServletContext context = getServletContext();
       dbName = context.getInitParameter("name");
       dbPassword = context.getInitParameter("password");
-    }
+    }*/
 
 	/**
 	 * @see HttpServlet#doGet(HttpServletRequest request, HttpServletResponse response)
