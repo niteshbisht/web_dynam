@@ -24,3 +24,11 @@ task copyTask(type: Copy) {
     from 'src/main/webapp'
     into 'build/explodedWar'
 }
+
+task deploy (dependsOn: war){
+    copy {
+        from "build/libs"
+        into "/home/nitesh/Link to files/apache-tomee-plus-1.7.1/webapps"
+        include "*.war"
+    }
+}
