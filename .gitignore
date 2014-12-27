@@ -2,3 +2,4 @@
 /web_dynamics/build/*
 /web_dynamics/WebContent/*
 /web_dynamics/.gradle/*
+/web_dynamics/bin/*
