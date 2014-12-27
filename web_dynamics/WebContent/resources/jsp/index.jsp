@@ -89,7 +89,7 @@
 			<div id="header">
 				<!-- wrapper-header -->
 				<div class="wrapper">
-					<a href="index.html"><img id="logo" src="../img/logo.png" alt="Nova" /></a>
+					<a href="./index.jsp"><img id="logo" src="../img/logo.png" alt="Nova" /></a>
 					<!-- search -->
 					<div class="top-search">
 						<form  method="get" id="searchform" action="#">
@@ -118,29 +118,29 @@
 					<div class="wrapper">
 						<!-- Navigation -->
 						<ul id="nav" class="sf-menu">
-							<li class="current-menu-item"><a href="index.html">Home<span class="subheader">Welcome</span></a></li>
-							<li><a href="features.html">Features<span class="subheader">Awesome options</span></a>
+							<li class="current-menu-item"><a href="./index.jsp">Home<span class="subheader">Welcome</span></a></li>
+							<li><a href="./features.jsp">Features<span class="subheader">Awesome options</span></a>
 								<ul>
 									
-									<li><a href="features-columns.html"><span> Columns layout</span></a></li>
-									<li><a href="features-accordion.html"><span> Accordion</span></a></li>
-									<li><a href="features-toggle.html"><span> Toggle box</span></a></li>
-									<li><a href="features-tabs.html"><span> Tabs</span></a></li>
-									<li><a href="features-infobox.html"><span> Text box</span></a></li>
-									<li><a href="features-monobox.html"><span> Icons</span></a></li>
+									<li><a href="features-columns.jsp"><span> Columns layout</span></a></li>
+									<li><a href="features-accordion.jsp"><span> Accordion</span></a></li>
+									<li><a href="features-toggle.jsp"><span> Toggle box</span></a></li>
+									<li><a href="features-tabs.jsp"><span> Tabs</span></a></li>
+									<li><a href="features-infobox.jsp"><span> Text box</span></a></li>
+									<li><a href="features-monobox.jsp"><span> Icons</span></a></li>
 								</ul>
 							</li>
-							<li><a href="blog.html">Blog<span class="subheader">Read our posts</span></a></li>
-							<li><a href="portfolio.html">Portfolio <span class="subheader">Showcase work</span></a></li>
-							<li><a href="gallery.html">Gallery<span class="subheader">Featured work</span></a>
+							<li><a href="./blog.jsp">Blog<span class="subheader">Read our posts</span></a></li>
+							<li><a href="./portfolio.jsp">Portfolio <span class="subheader">Showcase work</span></a></li>
+							<li><a href="./gallery.jsp">Gallery<span class="subheader">Featured work</span></a>
 								<ul>
-									<li><a href="gallery.html"><span> Four columns</span></a></li>
-									<li><a href="gallery-3.html"><span> Three columns </span></a></li>
-									<li><a href="gallery-2.html"><span> Two columns </span></a></li>
-									<li><a href="video-gallery.html"><span> Video gallery </span></a></li>
+									<li><a href="./gallery.jsp"><span> Four columns</span></a></li>
+									<li><a href="gallery-3.jsp"><span> Three columns </span></a></li>
+									<li><a href="gallery-2.jsp"><span> Two columns </span></a></li>
+									<li><a href="video-./gallery.jsp"><span> Video gallery </span></a></li>
 								</ul>
 							</li>
-							<li><a href="contact.html">Contact<span class="subheader">Get in touch</span></a></li>
+							<li><a href="./contact.jsp">Contact<span class="subheader">Get in touch</span></a></li>
 							<li><a href="./login.jsp">Login<span class="subheader">Proceed to Secure</span></a></li>
 						</ul>
 						<!-- Navigation -->
@@ -197,28 +197,28 @@
 								<div>
 									<ul class="blocks-thumbs thumbs-rollover">
 										<li>
-											<a href="single.html" class="thumb" title="An image"><img src="../img/dummies/282x150.gif" alt="Post" /></a>
+											<a href="single.jsp" class="thumb" title="An image"><img src="../img/dummies/282x150.gif" alt="Post" /></a>
 											<div class="excerpt">
-												<a href="single.html" class="header">Lorem ipsum dolor</a>
+												<a href="single.jsp" class="header">Lorem ipsum dolor</a>
 												Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo. Quisque sit amet est et sapien ullamcorper pharetra.
 											</div>
-											<a href="single.html" class="link-button"><span>Read more &#8594;</span></a>
+											<a href="single.jsp" class="link-button"><span>Read more &#8594;</span></a>
 										</li>
 										<li>
-											<a href="single.html" class="thumb" title="An image"><img src="../img/dummies/282x150.gif" alt="Post" /></a>
+											<a href="single.jsp" class="thumb" title="An image"><img src="../img/dummies/282x150.gif" alt="Post" /></a>
 											<div class="excerpt">
-												<a href="single.html" class="header">Lorem ipsum dolor</a>
+												<a href="single.jsp" class="header">Lorem ipsum dolor</a>
 												Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo. Quisque sit amet est et sapien ullamcorper pharetra.
 											</div>
-											<a href="single.html" class="link-button"><span>Read more &#8594;</span></a>
+											<a href="single.jsp" class="link-button"><span>Read more &#8594;</span></a>
 										</li>
 										<li>
-											<a href="single.html" class="thumb" title="An image"><img src="../img/dummies/282x150.gif" alt="Post" /></a>
+											<a href="single.jsp" class="thumb" title="An image"><img src="../img/dummies/282x150.gif" alt="Post" /></a>
 											<div class="excerpt">
-												<a href="single.html" class="header">Lorem ipsum dolor</a>
+												<a href="single.jsp" class="header">Lorem ipsum dolor</a>
 												Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo. Quisque sit amet est et sapien ullamcorper pharetra.
 											</div>
-											<a href="single.html" class="link-button"><span>Read more &#8594;</span></a>
+											<a href="single.jsp" class="link-button"><span>Read more &#8594;</span></a>
 										</li>
 									</ul>
 								</div>
@@ -229,8 +229,8 @@
 									<div class="plain-text">
 										<h6>Pellentesque habitant morbi tristique senectus et netus et malesuada.</h6> 
 										<p>Fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo. Cursus faucibus, tortor neque egestas augue, eu vulputate magna eros eu erat. Aliquam erat volutpat. Nam dui mi, tincidunt quis, accumsan porttitor, facilisis luctus, metus. </p>
-										<p>Fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo. Cursus faucibus, tortor neque egestas augue, eu vulputate magna eros eu erat. Aliquam erat volutpat. Nam dui mi, tincidunt quis, accumsan porttitor, facilisis luctus, metus.Fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper <a href="single.html">This is a link</a>. Aenean ultricies mi vitae est. Mauris placerat eleifend leo. Cursus faucibus, tortor neque egestas augue, eu vulputate magna eros eu erat. Aliquam erat volutpat. Nam dui mi, tincidunt quis, accumsan porttitor, facilisis luctus, metus. </p>
-										<a href="single.html" class="link-button"><span>Read more &#8594;</span></a>
+										<p>Fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo. Cursus faucibus, tortor neque egestas augue, eu vulputate magna eros eu erat. Aliquam erat volutpat. Nam dui mi, tincidunt quis, accumsan porttitor, facilisis luctus, metus.Fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper <a href="single.jsp">This is a link</a>. Aenean ultricies mi vitae est. Mauris placerat eleifend leo. Cursus faucibus, tortor neque egestas augue, eu vulputate magna eros eu erat. Aliquam erat volutpat. Nam dui mi, tincidunt quis, accumsan porttitor, facilisis luctus, metus. </p>
+										<a href="single.jsp" class="link-button"><span>Read more &#8594;</span></a>
 									</div>
 								</div>
 								<!-- ENDS Information -->
@@ -239,28 +239,28 @@
 								<div>
 									<ul class="blocks-thumbs thumbs-rollover">
 										<li>
-											<a href="single.html" class="thumb" title="An image"><img src="../img/dummies/282x150.gif" alt="Post" /></a>
+											<a href="single.jsp" class="thumb" title="An image"><img src="../img/dummies/282x150.gif" alt="Post" /></a>
 											<div class="excerpt">
-												<a href="single.html" class="header">Lorem ipsum dolor</a>
+												<a href="single.jsp" class="header">Lorem ipsum dolor</a>
 												Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo. Quisque sit amet est et sapien ullamcorper pharetra.
 											</div>
-											<a href="single.html" class="link-button"><span>Read more &#8594;</span></a>
+											<a href="single.jsp" class="link-button"><span>Read more &#8594;</span></a>
 										</li>
 										<li>
-											<a href="single.html" class="thumb" title="An image"><img src="../img/dummies/282x150.gif" alt="Post" /></a>
+											<a href="single.jsp" class="thumb" title="An image"><img src="../img/dummies/282x150.gif" alt="Post" /></a>
 											<div class="excerpt">
-												<a href="single.html" class="header">Lorem ipsum dolor</a>
+												<a href="single.jsp" class="header">Lorem ipsum dolor</a>
 												Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo. Quisque sit amet est et sapien ullamcorper pharetra.
 											</div>
-											<a href="single.html" class="link-button"><span>Read more &#8594;</span></a>
+											<a href="single.jsp" class="link-button"><span>Read more &#8594;</span></a>
 										</li>
 										<li>
-											<a href="single.html" class="thumb" title="An image"><img src="../img/dummies/282x150.gif" alt="Post" /></a>
+											<a href="single.jsp" class="thumb" title="An image"><img src="../img/dummies/282x150.gif" alt="Post" /></a>
 											<div class="excerpt">
-												<a href="single.html" class="header">Lorem ipsum dolor</a>
+												<a href="single.jsp" class="header">Lorem ipsum dolor</a>
 												Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo. Quisque sit amet est et sapien ullamcorper pharetra.
 											</div>
-											<a href="single.html" class="link-button"><span>Read more &#8594;</span></a>
+											<a href="single.jsp" class="link-button"><span>Read more &#8594;</span></a>
 										</li>
 									</ul>
 								</div>
@@ -302,12 +302,12 @@
 						<li class="col">
 							<h6>Pages</h6>
 							<ul>
-								<li class="page_item"><a href="index.html">Home</a></li>
-								<li class="page_item"><a href="features.html">Features</a></li>
-								<li class="page_item"><a href="blog.html">Blog</a></li>
-								<li class="page_item"><a href="portfolio.html">Portfolio</a></li>
-								<li class="page_item"><a href="gallery.html">Gallery</a></li>
-								<li class="page_item"><a href="contact.html">Contact</a></li>
+								<li class="page_item"><a href="./index.jsp">Home</a></li>
+								<li class="page_item"><a href="./features.jsp">Features</a></li>
+								<li class="page_item"><a href="./blog.jsp">Blog</a></li>
+								<li class="page_item"><a href="./portfolio.jsp">Portfolio</a></li>
+								<li class="page_item"><a href="./gallery.jsp">Gallery</a></li>
+								<li class="page_item"><a href="./contact.jsp">Contact</a></li>
 							</ul>
 						</li>
 						
