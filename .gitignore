@@ -1,0 +1,4 @@
+# exclude everything except directory foo/bar
+/web_dynamics/build/*
+/web_dynamics/WebContent/*
+/web_dynamics/.gradle/*
