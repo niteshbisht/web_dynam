@@ -121,27 +121,47 @@
 		<div class="wrapper">
 			<a href="index.html"><img id="logo" src="../img/logo.png"
 				alt="Nova" /></a>
-			<!-- search -->
-			<div class="top-search">
-				<form method="get" id="searchform" action="#">
-					<div>
-						<input type="text" value="Search..." name="s" id="s"
-							onfocus="defaultInput(this)" onblur="clearInput(this)" /> <input
-							type="submit" id="searchsubmit" value=" " />
-					</div>
+			<div class="login-class">
+				<form action="loginservlet" method="post" id="loginform">
+					<table>
+						<tbody>
+							<tr>
+								<td><input type="text" name="userName" title="UserName"
+									value="UserName..." id="uname" onfocus="defaultInput(this)"
+									onblur="clearInput(this)" /></td>
+								<td><input type="password" name="passWord" title="Password"
+									value="********" id="passwd" onfocus="defaultInput(this)"
+									onblur="clearInput(this)" /></td>
+
+								<td><input type="submit" id="loginsubmit" value=" " /></td>
+							</tr>
+						</tbody>
+					</table>
 				</form>
+
 			</div>
-			<!-- ENDS search -->
 		</div>
-		<!-- ENDS wrapper-header -->
+		<!-- search -->
+		<div class="top-search">
+			<form method="get" id="searchform" action="#">
+				<div>
+					<input type="text" value="Search..." name="s" id="s"
+						onfocus="defaultInput(this)" onblur="clearInput(this)" /> <input
+						type="submit" id="searchsubmit" value=" " />
+				</div>
+			</form>
+		</div>
+		<!-- ENDS search -->
+	</div>
+	<!-- ENDS wrapper-header -->
 	</div>
 	<!-- ENDS HEADER -->
 
-	<form action="loginservlet" method="post">
+	<!-- <form action="loginservlet" method="post">
 		<input type="text" name="userName" title="UserName" /> <input
 			type="password" name="passWord" title="Password" /> <input
 			type="submit" />
-	</form>
+	</form> -->
 
 	<!-- Menu -->
 	<div id="menu">

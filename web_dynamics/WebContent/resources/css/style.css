@@ -327,13 +327,52 @@ h6{ font-size: 20px; }
 	margin-right:0 !important;
 }
 
+/*  LOGIN UI BUTTONS N Form--------------------------------------------*/
+.login-class{
+	position: fixed;
+	top: 20px;
+	right: 65px;
+	width: 450px;
+	float: right;
+}
+
+#loginform #uname{
+	color: #7e7e7e;
+	font-size: 10px;
+	width: 70px;
+	height: 15px;
+	padding: 0px 35px 0px 15px;
+	border: 0;
+	float: left;
+	background: #FFFFFF;	
+}
+
+#loginform #passwd{
+	color: #7e7e7e;
+	font-size: 10px;
+	width: 70px;
+	height: 15px;
+	padding: 0px 35px 0px 10px;
+	border: 0;
+	float:left;
+	background: #FFFFFF; 	
+}
+
+#loginform #loginsubmit{
+	right: 10px;
+	width: 50px;
+	height: 15px;
+	border: 0px;
+	float: right;
+	background: #BDE5F8;
+}
 
 /* SEARCH --------------------------------------------------------*/
 
 .top-search{
 	position: absolute;
-	top:47px;
-	right: 30px;
+	top:70px;
+	right: 70px;
 }
 
 #searchform #s{
