@@ -54,7 +54,7 @@ task startTomcat() {
   standardOutput = new ByteArrayOutputStream()
   println "output" + standardOutput.toString();	
   */
-    def command = """/usr/local/disk1/files/apache-tomee-plus-1.7.1/bin/startup.sh"""// Create the String
+    def command = """/usr/local/disk1/files/apache-tomee-plus-1.7.1/bin/catalina.sh start"""// Create the String
 	def proc = command.execute()                 // Call *execute* on the string
 	proc.waitFor()
   //extension method startTomcat.output() can be used to obtain the output:
