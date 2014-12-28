@@ -49,7 +49,7 @@ task startTomcat(type:Exec) {
   
   //on linux
   commandLine 'pwd'
-  commandLine './startup.sh'
+  commandLine './starttomee.sh'
 
   //store the output instead of printing to the console:
   standardOutput = new ByteArrayOutputStream()
