@@ -133,7 +133,7 @@
 									value="********" id="passwd" onfocus="defaultInput(this)"
 									onblur="clearInput(this)" /></td>
 
-								<td><input type="submit" id="loginsubmit" value=" " /></td>
+								<td><input type="submit" id="loginsubmit" value=" Login " /></td>
 							</tr>
 						</tbody>
 					</table>

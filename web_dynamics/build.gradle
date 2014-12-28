@@ -6,7 +6,6 @@ repositories {
 
 def tomcatHome = '/usr/local/disk1/files/apache-tomee-plus-1.7.1'
 def libsDir= 'build/libs'
-
 dependencies {
     compile group: 'commons-logging', name: 'commons-logging', version: '1.2'
     compile group: 'org.apache.commons', name: 'commons-lang3', version: '3.3.2'
@@ -43,28 +42,26 @@ task copyWar() << {
     }
 }
 
-task startTomcat() {
- // workingDir '/usr/local/disk1/files/apache-tomee-plus-1.7.1/bin'
-/*  task startTomcat(type:Exec)
+task startTomcat(type:Exec) {
+  
+  workingDir '/usr/local/disk1/files/apache-tomee-plus-1.7.1/bin'
+
   
   //on linux
-  commandLine 'startup.sh'
+  commandLine './startup.sh'
 
   //store the output instead of printing to the console:
   standardOutput = new ByteArrayOutputStream()
   println "output" + standardOutput.toString();	
-  */
-    def command = """cd /usr/local/disk1/files/apache-tomee-plus-1.7.1/bin"""// Create the String
-	def proc = command.execute()                 // Call *execute* on the string
-	proc.waitFor()
+   
 	
-	command = """sudo -u nitesh ./catalina.sh start"""
-  	proc = command.execute()                 // Call *execute* on the string
-	proc.waitFor()
+/*	def command = """sudo -u nitesh /usr/local/disk1/files/apache-tomee-plus-1.7.1/bin/catalina.sh start"""
+  	def proc = command.execute()                 // Call *execute* on the string
+	proc.waitFor() */
   //extension method startTomcat.output() can be used to obtain the output:
- /* ext.output = {
+  ext.output = {
     return standardOutput.toString()
-  }*/
+  }
 }
 
 task deployWar(dependsOn: ['build', 'cleanTomcatDir' , 'copyWar', 'startTomcat'])

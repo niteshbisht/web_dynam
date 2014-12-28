@@ -339,9 +339,9 @@ h6{ font-size: 20px; }
 #loginform #uname{
 	color: #7e7e7e;
 	font-size: 10px;
-	width: 70px;
-	height: 15px;
-	padding: 0px 35px 0px 15px;
+	width: 120px;
+	height: 20px;
+	padding: 0px 35px 0px 5px;
 	border: 0;
 	float: left;
 	background: #FFFFFF;	
@@ -350,9 +350,9 @@ h6{ font-size: 20px; }
 #loginform #passwd{
 	color: #7e7e7e;
 	font-size: 10px;
-	width: 70px;
-	height: 15px;
-	padding: 0px 35px 0px 10px;
+	width: 80px;
+	height: 20px;
+	padding: 0px 35px 0px 5px;
 	border: 0;
 	float:left;
 	background: #FFFFFF; 	
@@ -361,10 +361,10 @@ h6{ font-size: 20px; }
 #loginform #loginsubmit{
 	right: 10px;
 	width: 50px;
-	height: 15px;
-	border: 0px;
+	height: 20px;
+	border: 1px;
 	float: right;
-	background: #BDE5F8;
+	background: mintcream;
 }
 
 /* SEARCH --------------------------------------------------------*/
