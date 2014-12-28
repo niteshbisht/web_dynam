@@ -43,20 +43,24 @@ task copyWar() << {
     }
 }
 
-task startTomcat(type:Exec) {
-  workingDir '/usr/local/disk1/files/apache-tomee-plus-1.7.1/bin'
-
+task startTomcat() {
+ // workingDir '/usr/local/disk1/files/apache-tomee-plus-1.7.1/bin'
+/*  task startTomcat(type:Exec)
   
   //on linux
-  commandLine './startup.sh'
+  commandLine 'startup.sh'
 
   //store the output instead of printing to the console:
   standardOutput = new ByteArrayOutputStream()
   println "output" + standardOutput.toString();	
+  */
+    def command = """/usr/local/disk1/files/apache-tomee-plus-1.7.1/bin/startup.sh"""// Create the String
+	def proc = command.execute()                 // Call *execute* on the string
+	proc.waitFor()
   //extension method startTomcat.output() can be used to obtain the output:
-  ext.output = {
+ /* ext.output = {
     return standardOutput.toString()
-  }
+  }*/
 }
 
 task deployWar(dependsOn: ['build', 'cleanTomcatDir' , 'copyWar', 'startTomcat'])
