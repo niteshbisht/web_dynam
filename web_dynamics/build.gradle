@@ -48,6 +48,7 @@ task startTomcat(type:Exec) {
 
   
   //on linux
+  commandLine 'pwd'
   commandLine './startup.sh'
 
   //store the output instead of printing to the console:
