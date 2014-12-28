@@ -30,7 +30,7 @@ task cleanTomcatDir(type:Exec){
   //extension method startTomcat.output() can be used to obtain the output:
   ext.output = {
     return standardOutput.toString()
-  }
+  }	
 }
 
 task copyWar() << {
@@ -52,7 +52,7 @@ task startTomcat(type:Exec) {
 
   //store the output instead of printing to the console:
   standardOutput = new ByteArrayOutputStream()
-
+  println "output" + standardOutput.toString();	
   //extension method startTomcat.output() can be used to obtain the output:
   ext.output = {
     return standardOutput.toString()
