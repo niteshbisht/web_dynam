@@ -126,14 +126,21 @@
 					<table>
 						<tbody>
 							<tr>
-								<td><input type="text" name="userName" title="UserName"
-									value="UserName..." id="uname" onfocus="defaultInput(this)"
-									onblur="clearInput(this)" /></td>
-								<td><input type="password" name="passWord" title="Password"
-									value="********" id="passwd" onfocus="defaultInput(this)"
-									onblur="clearInput(this)" /></td>
 
-								<td><input type="submit" id="loginsubmit" value=" Login " /></td>
+								<td>
+									<div>
+										<input type="text" name="userName" title="UserName"
+											value="UserName..." id="uname" onfocus="defaultUserInput(this)"
+											onblur="clearInput(this)" />
+									</div>
+								</td>
+								<td><div>
+										<input type="password" name="passWord" title="Password"
+											value="********" id="passwd" onfocus="defaultPassInput(this)"
+											onblur="clearPassInput(this)" />
+									</div></td>
+
+								<td><input type="submit" id="loginsubmit" value=" " /></td>
 							</tr>
 						</tbody>
 					</table>
@@ -180,8 +187,8 @@
 							class="subheader">Awesome options</span></a>
 						<ul>
 
-							<li><a href="features-columns.jsp"><span>
-										Columns layout</span></a></li>
+							<li><a href="features-columns.jsp"><span> Columns
+										layout</span></a></li>
 							<li><a href="features-accordion.jsp"><span>
 										Accordion</span></a></li>
 							<li><a href="features-toggle.jsp"><span> Toggle

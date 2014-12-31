@@ -305,5 +305,21 @@ function clearInput(target){
 	if((target).value == ''){(target).value='Search...'}
 }
 
+//username clearance	
+function defaultUserInput(target){
+	if((target).value == 'UserName...'){(target).value=''}
+}
 
+function clearUserInput(target){
+	if((target).value == ''){(target).value='Username...'}
+}
+
+//Password clearance	
+function defaultPassInput(target){
+	if((target).value == '********'){(target).value=''}
+}
+
+function clearPassInput(target){
+	if((target).value == ''){(target).value='*********'}
+}
 
