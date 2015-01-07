@@ -3,4 +3,8 @@
 /web_dynamics/WebContent/*
 /web_dynamics/.gradle/*
 /web_dynamics/bin/*
+/web_dynamics_spring_fw/build/*
+/web_dynamics_spring_fw/WebContent/*
+/web_dynamics_spring_fw/.gradle/*
+/web_dynamics_spring_fw/bin/*
 
