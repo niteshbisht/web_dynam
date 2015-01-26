@@ -26,5 +26,6 @@
 	<classpathentry kind="lib" path="/home/nitesh/devBox/jarBox/spring4.1.4/spring-framework-4.1.4.RELEASE/libs/spring-webmvc-portlet-4.1.4.RELEASE.jar"/>
 	<classpathentry kind="lib" path="/home/nitesh/devBox/jarBox/spring4.1.4/spring-framework-4.1.4.RELEASE/libs/spring-websocket-4.1.4.RELEASE.jar"/>
 	<classpathentry kind="lib" path="/home/nitesh/devBox/jarBox/commons-logging-1.2.jar"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.junit.JUNIT_CONTAINER/4"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>

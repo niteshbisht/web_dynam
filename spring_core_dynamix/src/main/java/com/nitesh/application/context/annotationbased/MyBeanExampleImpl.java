@@ -7,8 +7,9 @@ public class MyBeanExampleImpl implements CommonBeanInterface {
 	Logger LOG = Logger.getLogger("MyBeanExampleImpl");
 	
 	@Override
-	public void show() {
+	public boolean show() {
 		LOG.info("hey I am inside the MyBeanExampleIMPL");
+		return true;
 	}
 
 }
