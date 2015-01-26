@@ -7,4 +7,6 @@
 /web_dynamics_spring_fw/WebContent/*
 /web_dynamics_spring_fw/.gradle/*
 /web_dynamics_spring_fw/bin/*
+/spring_core_dynamix/build/*
+/spring_core_dynamix/bin/*
 
