@@ -1,0 +1,32 @@
+apply plugin: 'java'
+apply plugin: 'eclipse'
+
+version = '1.0'
+sourceCompatibility = 1.7
+targetCompatibility = 1.7
+
+repositories {
+    mavenCentral()
+    mavenLocal()
+}
+
+def org_springframework_version= '4.1.0.RELEASE'
+def org_aspectj_version= '1.8.4'
+def org_sl4j_version= '1.7.10'
+dependencies {
+    compile(
+    [ group: 'commons-logging', name: 'commons-logging', version: '1.2' ] ,
+    [ group: 'org.apache.commons', name: 'commons-lang3', version: '3.3.2' ] , 
+    [ group: 'javax.servlet', name: 'javax.servlet-api', version: '3.1.0' ] ,
+	[ group: 'commons-configuration', name: 'commons-configuration', version: '1.10' ] ,
+	[ group: 'org.elasticsearch', name: 'elasticsearch', version: '1.4.2' ] ,
+	[ group: 'org.springframework',  name: 'spring-context',  version: '4.1.2.RELEASE' ] , 
+	[ group: 'org.springframework', name: 'spring-webmvc', version: '4.1.2.RELEASE' ] ,
+	[ group: 'org.aspectj', name: 'aspectjrt', version: '1.8.4' ] ,
+	[ group: 'org.slf4j', name: 'slf4j-api', version: '1.7.10' ] ,
+	[ group: 'org.slf4j', name: 'jcl-over-slf4j', version: '1.7.10' ] ,
+	[ group: 'org.slf4j', name: 'slf4j-log4j12', version: '1.7.10' ] ,
+	[ group: 'log4j', name: 'log4j', version: '1.2.16' ] ,
+	[ group: 'javax.inject', name: 'javax.inject', version: '1' ]
+	)
+}
