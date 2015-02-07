@@ -1,4 +1,4 @@
-package com.nitesh.start_serv.views;
+package com.nitesh.serv.views;
 
 import javax.validation.Valid;
 

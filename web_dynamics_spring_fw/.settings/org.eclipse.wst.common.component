@@ -4,7 +4,7 @@
         <wb-resource deploy-path="/WEB-INF/classes" source-path="/src/main/java"/>
         <wb-resource deploy-path="/WEB-INF/classes" source-path="/src/main/resources"/>
         <wb-resource deploy-path="/WEB-INF/classes" source-path="/src/test/java"/>
-        <property name="context-root" value="web_dynamics"/>
         <property name="java-output-path" value="/web_dynamics/bin"/>
+        <property name="context-root" value="web_dynamics_spring_fw"/>
     </wb-module>
 </project-modules>

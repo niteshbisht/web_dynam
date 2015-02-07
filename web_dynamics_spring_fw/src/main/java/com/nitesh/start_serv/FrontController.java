@@ -17,7 +17,7 @@ public class FrontController {
 
 	@RequestMapping("/front")
 	public @ResponseBody String front() {
-		return "redirect:index";
+		return "index";
 	}
 	
 	/**
