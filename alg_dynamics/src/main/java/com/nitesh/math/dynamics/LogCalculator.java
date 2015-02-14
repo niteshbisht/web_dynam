@@ -6,7 +6,7 @@ public class LogCalculator {
 		return getLog(base, num);
 	}
 
-	private static double getLog(int base, int num) {
+	private static int getLog(int base, int num) {
 		double p = base;
 		int ctr = 0;
 		while (p <= num) {
