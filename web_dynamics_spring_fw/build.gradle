@@ -50,7 +50,7 @@ task cleanTomcatDir(type:Exec){
 	
 	workingDir '/usr/local/disk1/files/apache-tomee-plus-1.7.1/webapps'
 	
-	commandLine 'rm', '-rf', 'web_dynamics', 'web_dynamics.war'
+	commandLine 'rm', '-rf', 'web_dynamics_spring_fw', 'web_dynamics_spring_fw.war'
 	
 	//store the output instead of printing to the console:
   standardOutput = new ByteArrayOutputStream()
