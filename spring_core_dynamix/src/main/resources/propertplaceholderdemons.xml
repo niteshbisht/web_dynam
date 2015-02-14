@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+xsi:schemaLocation="http://www.springframework.org/schema/beans
+http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+<bean id="placeholderConfig"
+class="org.springframework.beans.factory.config.PropertyPlaceholderConfigurer">
+<property name="location" value="classpath:hostprop.properties" />
+</bean>
+
+<bean name="propertyRoot" class="com.dynamix.property.placeholder.PropertyRootClass">
+<constructor-arg ref="childisPropA" />
+<constructor-arg ref="childisPropB" />
+</bean>
+<bean name="childisPropA" class="com.dynamix.property.placeholder.ChildisPropA">
+<constructor-arg value="${hostnameA}" />
+</bean>
+<bean name="childisPropB" class="com.dynamix.property.placeholder.ChildisPropB">
+<constructor-arg value="${hostnameB}" />
+</bean>
+
+</beans>

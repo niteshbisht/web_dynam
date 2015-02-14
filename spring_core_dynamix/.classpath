@@ -8,9 +8,9 @@
 	<classpathentry kind="lib" path="/home/nitesh/devBox/jarBox/spring4.1.4/spring-framework-4.1.4.RELEASE/libs/spring-aop-4.1.4.RELEASE.jar"/>
 	<classpathentry kind="lib" path="/home/nitesh/devBox/jarBox/spring4.1.4/spring-framework-4.1.4.RELEASE/libs/spring-aspects-4.1.4.RELEASE.jar"/>
 	<classpathentry kind="lib" path="/home/nitesh/devBox/jarBox/spring4.1.4/spring-framework-4.1.4.RELEASE/libs/spring-beans-4.1.4.RELEASE.jar"/>
-	<classpathentry kind="lib" path="/home/nitesh/devBox/jarBox/spring4.1.4/spring-framework-4.1.4.RELEASE/libs/spring-context-4.1.4.RELEASE.jar"/>
+	<classpathentry kind="lib" path="/home/nitesh/devBox/jarBox/spring4.1.4/spring-framework-4.1.4.RELEASE/libs/spring-context-4.1.4.RELEASE.jar" sourcepath="/home/nitesh/devBox/jarBox/spring4.1.4/spring-framework-4.1.4.RELEASE/libs/spring-context-4.1.4.RELEASE-sources.jar"/>
 	<classpathentry kind="lib" path="/home/nitesh/devBox/jarBox/spring4.1.4/spring-framework-4.1.4.RELEASE/libs/spring-context-support-4.1.4.RELEASE.jar"/>
-	<classpathentry kind="lib" path="/home/nitesh/devBox/jarBox/spring4.1.4/spring-framework-4.1.4.RELEASE/libs/spring-core-4.1.4.RELEASE.jar"/>
+	<classpathentry kind="lib" path="/home/nitesh/devBox/jarBox/spring4.1.4/spring-framework-4.1.4.RELEASE/libs/spring-core-4.1.4.RELEASE.jar" sourcepath="/home/nitesh/devBox/jarBox/spring4.1.4/spring-framework-4.1.4.RELEASE/libs/spring-core-4.1.4.RELEASE-sources.jar"/>
 	<classpathentry kind="lib" path="/home/nitesh/devBox/jarBox/spring4.1.4/spring-framework-4.1.4.RELEASE/libs/spring-expression-4.1.4.RELEASE.jar"/>
 	<classpathentry kind="lib" path="/home/nitesh/devBox/jarBox/spring4.1.4/spring-framework-4.1.4.RELEASE/libs/spring-instrument-4.1.4.RELEASE.jar"/>
 	<classpathentry kind="lib" path="/home/nitesh/devBox/jarBox/spring4.1.4/spring-framework-4.1.4.RELEASE/libs/spring-instrument-tomcat-4.1.4.RELEASE.jar"/>

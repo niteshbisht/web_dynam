@@ -46,5 +46,6 @@
 	<classpathentry kind="lib" path="/home/nitesh/devBox/jarBox/spring4.1.4/spring-framework-4.1.4.RELEASE/libs/spring-webmvc-portlet-4.1.4.RELEASE.jar"/>
 	<classpathentry kind="lib" path="/home/nitesh/devBox/jarBox/spring4.1.4/spring-framework-4.1.4.RELEASE/libs/spring-websocket-4.1.4.RELEASE.jar"/>
 	<classpathentry kind="lib" path="/home/nitesh/devBox/jarBox/validation-api-1.1.0.Final.jar"/>
+	<classpathentry kind="lib" path="/home/nitesh/devBox/jarBox/spring4.1.4/spring-framework-4.1.4.RELEASE/libs/spring-security-web-3.2.5.RELEASE.jar"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>
