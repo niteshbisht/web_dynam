@@ -10,6 +10,6 @@
 	<!-- Maps '/' requests to the 'home' view -->
 	<mvc:view-controller path="/" view-name="index"/>
 	
-	<context:component-scan base-package="com.nitesh.start_serv" />
+	<context:component-scan base-package="com.nitesh.startserv" />
 	 
 </beans>

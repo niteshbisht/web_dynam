@@ -1,4 +1,4 @@
-package com.nitesh.start_serv;
+package com.nitesh.servconttroller;
 
 import java.io.IOException;
 
@@ -21,7 +21,8 @@ public class LoginController {
 	private static final long serialVersionUID = 1L;
        
 	@RequestMapping(value = "/login", method = RequestMethod.GET)
-	public @ResponseBody String front() {
-		return "redirect:/dologin";
+	@ResponseBody
+	public String login() {
+		return "redirect:/loginc";
 	}
 }

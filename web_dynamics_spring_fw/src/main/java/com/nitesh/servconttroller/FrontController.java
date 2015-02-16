@@ -1,4 +1,4 @@
-package com.nitesh.start_serv;
+package com.nitesh.servconttroller;
 
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
