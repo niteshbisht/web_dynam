@@ -22,7 +22,7 @@
 	<classpathentry kind="lib" path="/home/nitesh/devBox/jarBox/spring4.1.4/spring-framework-4.1.4.RELEASE/libs/spring-test-4.1.4.RELEASE.jar"/>
 	<classpathentry kind="lib" path="/home/nitesh/devBox/jarBox/spring4.1.4/spring-framework-4.1.4.RELEASE/libs/spring-tx-4.1.4.RELEASE.jar"/>
 	<classpathentry kind="lib" path="/home/nitesh/devBox/jarBox/spring4.1.4/spring-framework-4.1.4.RELEASE/libs/spring-web-4.1.4.RELEASE.jar"/>
-	<classpathentry kind="lib" path="/home/nitesh/devBox/jarBox/spring4.1.4/spring-framework-4.1.4.RELEASE/libs/spring-webmvc-4.1.4.RELEASE.jar"/>
+	<classpathentry kind="lib" path="/home/nitesh/devBox/jarBox/spring4.1.4/spring-framework-4.1.4.RELEASE/libs/spring-webmvc-4.1.4.RELEASE.jar" sourcepath="/home/nitesh/.m2/repository/org/springframework/spring-webmvc/4.1.4.RELEASE/spring-webmvc-4.1.4.RELEASE-sources.jar"/>
 	<classpathentry kind="lib" path="/home/nitesh/devBox/jarBox/spring4.1.4/spring-framework-4.1.4.RELEASE/libs/spring-webmvc-portlet-4.1.4.RELEASE.jar"/>
 	<classpathentry kind="lib" path="/home/nitesh/devBox/jarBox/spring4.1.4/spring-framework-4.1.4.RELEASE/libs/spring-websocket-4.1.4.RELEASE.jar"/>
 	<classpathentry kind="lib" path="/home/nitesh/devBox/jarBox/commons-logging-1.2.jar"/>

@@ -30,11 +30,17 @@ dependencies {
 	[ group: 'org.slf4j', name: 'slf4j-log4j12', version: '1.6.1' ],
 	[ group: 'log4j', name: 'log4j', version: '1.2.16' ],
 	[ group: 'javax.inject', name: 'javax.inject', version: '1' ],
-	[ group: 'javax.servlet.jsp', name: 'jsp-api', version: '2.0' ],
-	[ group: 'javax.servlet.jsp.jstl', name: 'jstl-api', version: '1.2' ]
+	[ group: 'javax.servlet.jsp', name: 'jsp-api', version: '2.1' ],
+	[ group: 'javax.servlet.jsp.jstl', name: 'jstl-api', version: '1.2' ],
+	[ group: 'org.apache.tomcat', name: 'tomcat-servlet-api', version: '7.0.30' ],
+	[ group: 'org.glassfish.web', name: 'jstl-impl', version: '1.2' ]
 	)
 	
-	compile('ch.qos.logback:logback-classic:1.0.0') {
+	compile('org.glassfish.web:jstl-impl:1.2') {
+        exclude group: 'javax.servlet', module: 'servlet-api' //by both name and group
+    }
+    
+    compile('ch.qos.logback:logback-classic:1.0.0') {
         exclude group: 'org.slf4j', module: 'slf4j-api' //by both name and group
     }
     
