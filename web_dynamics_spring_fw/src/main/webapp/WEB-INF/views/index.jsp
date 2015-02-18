@@ -151,8 +151,6 @@
 			</div>
 			<!-- ENDS Menu -->
 			
-			
-			
 
 			<!-- Slider -->
 			<div id="slider-block">
