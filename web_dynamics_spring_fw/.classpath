@@ -2,8 +2,8 @@
 <classpath>
 	<classpathentry kind="src" path="src/main/java"/>
 	<classpathentry kind="src" path="src/main/resources"/>
-	<classpathentry exported="true" kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
-	<classpathentry exported="true" kind="con" path="org.springsource.ide.eclipse.gradle.classpathcontainer">
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER" exported="true"/>
+	<classpathentry kind="con" path="org.springsource.ide.eclipse.gradle.classpathcontainer" exported="true">
 		<attributes>
 			<attribute name="org.eclipse.jst.component.dependency" value="/WEB-INF/lib"/>
 		</attributes>
@@ -11,4 +11,200 @@
 	<classpathentry kind="con" path="org.eclipse.jst.j2ee.internal.module.container"/>
 	<classpathentry kind="con" path="org.eclipse.jst.j2ee.internal.web.container"/>
 	<classpathentry kind="output" path="bin"/>
+	<classpathentry kind="con" path="org.eclipse.jst.j2ee.internal.web.container" exported="true"/>
+	<classpathentry sourcepath="/home/nitesh/.gradle/caches/modules-2/files-2.1/commons-logging/commons-logging/1.2/ecf26c7507d67782a3bbd148d170b31dfad001aa/commons-logging-1.2-sources.jar" kind="lib" path="/home/nitesh/.gradle/caches/modules-2/files-2.1/commons-logging/commons-logging/1.2/4bfc12adfe4842bf07b657f0369c4cb522955686/commons-logging-1.2.jar" exported="true">
+		<attributes>
+			<attribute name="org.eclipse.jst.component.nondependency" value=""/>
+		</attributes>
+	</classpathentry>
+	<classpathentry sourcepath="/home/nitesh/.gradle/caches/modules-2/files-2.1/org.apache.commons/commons-lang3/3.3.2/d2a489573c0ed2c4942b3660decad5d65087b406/commons-lang3-3.3.2-sources.jar" kind="lib" path="/home/nitesh/.gradle/caches/modules-2/files-2.1/org.apache.commons/commons-lang3/3.3.2/90a3822c38ec8c996e84c16a3477ef632cbc87a3/commons-lang3-3.3.2.jar" exported="true">
+		<attributes>
+			<attribute name="org.eclipse.jst.component.nondependency" value=""/>
+		</attributes>
+	</classpathentry>
+	<classpathentry sourcepath="/home/nitesh/.gradle/caches/modules-2/files-2.1/javax.servlet/javax.servlet-api/3.1.0/ab3976d4574c48d22dc1abf6a9e8bd0fdf928223/javax.servlet-api-3.1.0-sources.jar" kind="lib" path="/home/nitesh/.gradle/caches/modules-2/files-2.1/javax.servlet/javax.servlet-api/3.1.0/3cd63d075497751784b2fa84be59432f4905bf7c/javax.servlet-api-3.1.0.jar" exported="true">
+		<attributes>
+			<attribute name="org.eclipse.jst.component.nondependency" value=""/>
+		</attributes>
+	</classpathentry>
+	<classpathentry sourcepath="/home/nitesh/.gradle/caches/modules-2/files-2.1/commons-configuration/commons-configuration/1.10/2427d5eaf4011f855a95bd523febda041728393b/commons-configuration-1.10-sources.jar" kind="lib" path="/home/nitesh/.gradle/caches/modules-2/files-2.1/commons-configuration/commons-configuration/1.10/2b36e4adfb66d966c5aef2d73deb6be716389dc9/commons-configuration-1.10.jar" exported="true">
+		<attributes>
+			<attribute name="org.eclipse.jst.component.nondependency" value=""/>
+		</attributes>
+	</classpathentry>
+	<classpathentry sourcepath="/home/nitesh/.gradle/caches/modules-2/files-2.1/org.elasticsearch/elasticsearch/1.4.2/94405474c3de8e1116804a4d98e84c0893081f22/elasticsearch-1.4.2-sources.jar" kind="lib" path="/home/nitesh/.gradle/caches/modules-2/files-2.1/org.elasticsearch/elasticsearch/1.4.2/f64fa5905025fff0d5bd2e736fe173bf7eb5cc00/elasticsearch-1.4.2.jar" exported="true">
+		<attributes>
+			<attribute name="org.eclipse.jst.component.nondependency" value=""/>
+		</attributes>
+	</classpathentry>
+	<classpathentry sourcepath="/home/nitesh/.gradle/caches/modules-2/files-2.1/org.springframework/spring-context/4.1.0.RELEASE/9db79451911a526601f06177293a433c45539bd7/spring-context-4.1.0.RELEASE-sources.jar" kind="lib" path="/home/nitesh/.gradle/caches/modules-2/files-2.1/org.springframework/spring-context/4.1.0.RELEASE/b09f59878c2757490cd6bd1365afe686230ad18/spring-context-4.1.0.RELEASE.jar" exported="true">
+		<attributes>
+			<attribute name="org.eclipse.jst.component.nondependency" value=""/>
+		</attributes>
+	</classpathentry>
+	<classpathentry sourcepath="/home/nitesh/.gradle/caches/modules-2/files-2.1/org.springframework/spring-webmvc/4.1.0.RELEASE/f33502a131fabec4768715306fe927b00546d2c3/spring-webmvc-4.1.0.RELEASE-sources.jar" kind="lib" path="/home/nitesh/.gradle/caches/modules-2/files-2.1/org.springframework/spring-webmvc/4.1.0.RELEASE/7c4f66e33b75a4a4a320b88633ff8acf640d44ed/spring-webmvc-4.1.0.RELEASE.jar" exported="true">
+		<attributes>
+			<attribute name="org.eclipse.jst.component.nondependency" value=""/>
+		</attributes>
+	</classpathentry>
+	<classpathentry sourcepath="/home/nitesh/.gradle/caches/modules-2/files-2.1/org.springframework/spring-aop/4.1.0.RELEASE/a0250d4c062aed7a20bc1966ba623ee306104a20/spring-aop-4.1.0.RELEASE-sources.jar" kind="lib" path="/home/nitesh/.gradle/caches/modules-2/files-2.1/org.springframework/spring-aop/4.1.0.RELEASE/be535101d0cdd395484f13506bd8334042f35743/spring-aop-4.1.0.RELEASE.jar" exported="true">
+		<attributes>
+			<attribute name="org.eclipse.jst.component.nondependency" value=""/>
+		</attributes>
+	</classpathentry>
+	<classpathentry sourcepath="/home/nitesh/.gradle/caches/modules-2/files-2.1/org.springframework/spring-beans/4.1.0.RELEASE/b8f45d1b8400a9177c01745d4c86c78f2a37fc4a/spring-beans-4.1.0.RELEASE-sources.jar" kind="lib" path="/home/nitesh/.gradle/caches/modules-2/files-2.1/org.springframework/spring-beans/4.1.0.RELEASE/3c7d7df651e172ec7ce99bd7e19c9c015ebb596a/spring-beans-4.1.0.RELEASE.jar" exported="true">
+		<attributes>
+			<attribute name="org.eclipse.jst.component.nondependency" value=""/>
+		</attributes>
+	</classpathentry>
+	<classpathentry sourcepath="/home/nitesh/.gradle/caches/modules-2/files-2.1/org.springframework/spring-expression/4.1.0.RELEASE/2c5174ab716bf712e7f6670e50e8abb19def299a/spring-expression-4.1.0.RELEASE-sources.jar" kind="lib" path="/home/nitesh/.gradle/caches/modules-2/files-2.1/org.springframework/spring-expression/4.1.0.RELEASE/39d5734c5ca1f0b5c3bd9decd7f9277059d1300c/spring-expression-4.1.0.RELEASE.jar" exported="true">
+		<attributes>
+			<attribute name="org.eclipse.jst.component.nondependency" value=""/>
+		</attributes>
+	</classpathentry>
+	<classpathentry sourcepath="/home/nitesh/.gradle/caches/modules-2/files-2.1/org.springframework/spring-web/4.1.0.RELEASE/421882aea4197bb70e973b337c131c2d6683c11e/spring-web-4.1.0.RELEASE-sources.jar" kind="lib" path="/home/nitesh/.gradle/caches/modules-2/files-2.1/org.springframework/spring-web/4.1.0.RELEASE/5755c5ac57e38b46c3d9893fd540f4a5a99e22fb/spring-web-4.1.0.RELEASE.jar" exported="true">
+		<attributes>
+			<attribute name="org.eclipse.jst.component.nondependency" value=""/>
+		</attributes>
+	</classpathentry>
+	<classpathentry sourcepath="/home/nitesh/.gradle/caches/modules-2/files-2.1/org.springframework/spring-core/4.1.0.RELEASE/2fa08987f81f81701f494019be7871709c8f5691/spring-core-4.1.0.RELEASE-sources.jar" kind="lib" path="/home/nitesh/.gradle/caches/modules-2/files-2.1/org.springframework/spring-core/4.1.0.RELEASE/cd3ba08b0fe1b2cb9dc50e9762c4ba4fae5d8401/spring-core-4.1.0.RELEASE.jar" exported="true">
+		<attributes>
+			<attribute name="org.eclipse.jst.component.nondependency" value=""/>
+		</attributes>
+	</classpathentry>
+	<classpathentry sourcepath="/home/nitesh/.gradle/caches/modules-2/files-2.1/aopalliance/aopalliance/1.0/4a4b6d692e17846a9f3da036438a7ac491d3c814/aopalliance-1.0-sources.jar" kind="lib" path="/home/nitesh/.gradle/caches/modules-2/files-2.1/aopalliance/aopalliance/1.0/235ba8b489512805ac13a8f9ea77a1ca5ebe3e8/aopalliance-1.0.jar" exported="true">
+		<attributes>
+			<attribute name="org.eclipse.jst.component.nondependency" value=""/>
+		</attributes>
+	</classpathentry>
+	<classpathentry sourcepath="/home/nitesh/.gradle/caches/modules-2/files-2.1/org.aspectj/aspectjrt/1.8.1/b9f8bf867ec54e13e555d7a2dead54c42455e4e2/aspectjrt-1.8.1-sources.jar" kind="lib" path="/home/nitesh/.gradle/caches/modules-2/files-2.1/org.aspectj/aspectjrt/1.8.1/5e7a0fa36cc24ead36d885b9d775bb31ffa8524c/aspectjrt-1.8.1.jar" exported="true">
+		<attributes>
+			<attribute name="org.eclipse.jst.component.nondependency" value=""/>
+		</attributes>
+	</classpathentry>
+	<classpathentry sourcepath="/home/nitesh/.gradle/caches/modules-2/files-2.1/org.slf4j/slf4j-api/1.6.1/46a386136c901748e6a3af67ebde6c22bc6b4524/slf4j-api-1.6.1-sources.jar" kind="lib" path="/home/nitesh/.gradle/caches/modules-2/files-2.1/org.slf4j/slf4j-api/1.6.1/6f3b8a24bf970f17289b234284c94f43eb42f0e4/slf4j-api-1.6.1.jar" exported="true">
+		<attributes>
+			<attribute name="org.eclipse.jst.component.nondependency" value=""/>
+		</attributes>
+	</classpathentry>
+	<classpathentry sourcepath="/home/nitesh/.gradle/caches/modules-2/files-2.1/org.slf4j/jcl-over-slf4j/1.6.1/dbc80dfd897e3bc528199ff97e29e44a0ac4b462/jcl-over-slf4j-1.6.1-sources.jar" kind="lib" path="/home/nitesh/.gradle/caches/modules-2/files-2.1/org.slf4j/jcl-over-slf4j/1.6.1/99c61095a14dfc9e47a086068033c286bf236475/jcl-over-slf4j-1.6.1.jar" exported="true">
+		<attributes>
+			<attribute name="org.eclipse.jst.component.nondependency" value=""/>
+		</attributes>
+	</classpathentry>
+	<classpathentry sourcepath="/home/nitesh/.gradle/caches/modules-2/files-2.1/org.slf4j/slf4j-log4j12/1.6.1/7a26b08b265f55622fa1fed3bda68bbd37a465ba/slf4j-log4j12-1.6.1-sources.jar" kind="lib" path="/home/nitesh/.gradle/caches/modules-2/files-2.1/org.slf4j/slf4j-log4j12/1.6.1/bd245d6746cdd4e6203e976e21d597a46f115802/slf4j-log4j12-1.6.1.jar" exported="true">
+		<attributes>
+			<attribute name="org.eclipse.jst.component.nondependency" value=""/>
+		</attributes>
+	</classpathentry>
+	<classpathentry sourcepath="/home/nitesh/.gradle/caches/modules-2/files-2.1/log4j/log4j/1.2.16/bf945d1dc995be7fe64923625f842fbb6bf443be/log4j-1.2.16-sources.jar" kind="lib" path="/home/nitesh/.gradle/caches/modules-2/files-2.1/log4j/log4j/1.2.16/7999a63bfccbc7c247a9aea10d83d4272bd492c6/log4j-1.2.16.jar" exported="true">
+		<attributes>
+			<attribute name="org.eclipse.jst.component.nondependency" value=""/>
+		</attributes>
+	</classpathentry>
+	<classpathentry sourcepath="/home/nitesh/.gradle/caches/modules-2/files-2.1/javax.inject/javax.inject/1/a00123f261762a7c5e0ec916a2c7c8298d29c400/javax.inject-1-sources.jar" kind="lib" path="/home/nitesh/.gradle/caches/modules-2/files-2.1/javax.inject/javax.inject/1/6975da39a7040257bd51d21a231b76c915872d38/javax.inject-1.jar" exported="true">
+		<attributes>
+			<attribute name="org.eclipse.jst.component.nondependency" value=""/>
+		</attributes>
+	</classpathentry>
+	<classpathentry sourcepath="/home/nitesh/.gradle/caches/modules-2/files-2.1/javax.servlet.jsp/jsp-api/2.1/1c9e754118cf8d3d85b6b1257fb6fb0f914d08c6/jsp-api-2.1-sources.jar" kind="lib" path="/home/nitesh/.gradle/caches/modules-2/files-2.1/javax.servlet.jsp/jsp-api/2.1/63f943103f250ef1f3a4d5e94d145a0f961f5316/jsp-api-2.1.jar" exported="true">
+		<attributes>
+			<attribute name="org.eclipse.jst.component.nondependency" value=""/>
+		</attributes>
+	</classpathentry>
+	<classpathentry sourcepath="/home/nitesh/.gradle/caches/modules-2/files-2.1/javax.servlet.jsp.jstl/jstl-api/1.2/b7b976db29290621db582b38c1db9c22ff439f89/jstl-api-1.2-sources.jar" kind="lib" path="/home/nitesh/.gradle/caches/modules-2/files-2.1/javax.servlet.jsp.jstl/jstl-api/1.2/f9a034c1ca1f79c03bb461805a688f944544d138/jstl-api-1.2.jar" exported="true">
+		<attributes>
+			<attribute name="org.eclipse.jst.component.nondependency" value=""/>
+		</attributes>
+	</classpathentry>
+	<classpathentry sourcepath="/home/nitesh/.gradle/caches/modules-2/files-2.1/org.glassfish.web/jstl-impl/1.2/2e5ebd392d8e3f79588e29bedd4f4aa5708b99cc/jstl-impl-1.2-sources.jar" kind="lib" path="/home/nitesh/.gradle/caches/modules-2/files-2.1/org.glassfish.web/jstl-impl/1.2/611c12c6b993586852685f410658924b219ca326/jstl-impl-1.2.jar" exported="true">
+		<attributes>
+			<attribute name="org.eclipse.jst.component.nondependency" value=""/>
+		</attributes>
+	</classpathentry>
+	<classpathentry sourcepath="/home/nitesh/.gradle/caches/modules-2/files-2.1/ch.qos.logback/logback-classic/1.0.0/eebfd12633815cc6ac32968896436bbf74390688/logback-classic-1.0.0-sources.jar" kind="lib" path="/home/nitesh/.gradle/caches/modules-2/files-2.1/ch.qos.logback/logback-classic/1.0.0/2577f6b69bbab34bb55634a4500b1b877aeffb7c/logback-classic-1.0.0.jar" exported="true">
+		<attributes>
+			<attribute name="org.eclipse.jst.component.nondependency" value=""/>
+		</attributes>
+	</classpathentry>
+	<classpathentry sourcepath="/home/nitesh/.gradle/caches/modules-2/files-2.1/commons-lang/commons-lang/2.6/67313d715fbf0ea4fd0bdb69217fb77f807a8ce5/commons-lang-2.6-sources.jar" kind="lib" path="/home/nitesh/.gradle/caches/modules-2/files-2.1/commons-lang/commons-lang/2.6/ce1edb914c94ebc388f086c6827e8bdeec71ac2/commons-lang-2.6.jar" exported="true">
+		<attributes>
+			<attribute name="org.eclipse.jst.component.nondependency" value=""/>
+		</attributes>
+	</classpathentry>
+	<classpathentry sourcepath="/home/nitesh/.gradle/caches/modules-2/files-2.1/org.apache.lucene/lucene-core/4.10.2/479a67eda0108d417cd45921f89e65aab1c9dfff/lucene-core-4.10.2-sources.jar" kind="lib" path="/home/nitesh/.gradle/caches/modules-2/files-2.1/org.apache.lucene/lucene-core/4.10.2/c01e3d675d277e0a93e7890d03cc3246b2cdecaa/lucene-core-4.10.2.jar" exported="true">
+		<attributes>
+			<attribute name="org.eclipse.jst.component.nondependency" value=""/>
+		</attributes>
+	</classpathentry>
+	<classpathentry sourcepath="/home/nitesh/.gradle/caches/modules-2/files-2.1/org.apache.lucene/lucene-analyzers-common/4.10.2/67e9036850f3142b396ef5b5b82b100d3147a1d5/lucene-analyzers-common-4.10.2-sources.jar" kind="lib" path="/home/nitesh/.gradle/caches/modules-2/files-2.1/org.apache.lucene/lucene-analyzers-common/4.10.2/f977f8c443e8f4e9d1fd7fdfda80a6cf60b3e7c2/lucene-analyzers-common-4.10.2.jar" exported="true">
+		<attributes>
+			<attribute name="org.eclipse.jst.component.nondependency" value=""/>
+		</attributes>
+	</classpathentry>
+	<classpathentry sourcepath="/home/nitesh/.gradle/caches/modules-2/files-2.1/org.apache.lucene/lucene-queries/4.10.2/4cd65f048936807822973c48fe949be415344428/lucene-queries-4.10.2-sources.jar" kind="lib" path="/home/nitesh/.gradle/caches/modules-2/files-2.1/org.apache.lucene/lucene-queries/4.10.2/5933306d63f5354efef37b993e77152e619b8df4/lucene-queries-4.10.2.jar" exported="true">
+		<attributes>
+			<attribute name="org.eclipse.jst.component.nondependency" value=""/>
+		</attributes>
+	</classpathentry>
+	<classpathentry sourcepath="/home/nitesh/.gradle/caches/modules-2/files-2.1/org.apache.lucene/lucene-memory/4.10.2/58ba888e702764521b2952ee7b0755468ca75515/lucene-memory-4.10.2-sources.jar" kind="lib" path="/home/nitesh/.gradle/caches/modules-2/files-2.1/org.apache.lucene/lucene-memory/4.10.2/c381123b510dd790e27445430ab8203e5a27f5bc/lucene-memory-4.10.2.jar" exported="true">
+		<attributes>
+			<attribute name="org.eclipse.jst.component.nondependency" value=""/>
+		</attributes>
+	</classpathentry>
+	<classpathentry sourcepath="/home/nitesh/.gradle/caches/modules-2/files-2.1/org.apache.lucene/lucene-highlighter/4.10.2/73b5c2b3fce113fe606cfa9a23934b7c33cb7ca2/lucene-highlighter-4.10.2-sources.jar" kind="lib" path="/home/nitesh/.gradle/caches/modules-2/files-2.1/org.apache.lucene/lucene-highlighter/4.10.2/7ced704190e1e5b9a9b32edec6dba9116d69ae72/lucene-highlighter-4.10.2.jar" exported="true">
+		<attributes>
+			<attribute name="org.eclipse.jst.component.nondependency" value=""/>
+		</attributes>
+	</classpathentry>
+	<classpathentry sourcepath="/home/nitesh/.gradle/caches/modules-2/files-2.1/org.apache.lucene/lucene-queryparser/4.10.2/fb6502ea5563bf4c409bb9561d4880a143048a6/lucene-queryparser-4.10.2-sources.jar" kind="lib" path="/home/nitesh/.gradle/caches/modules-2/files-2.1/org.apache.lucene/lucene-queryparser/4.10.2/d70f54e1060d553ba7aeb4d49a71fd0c068499e8/lucene-queryparser-4.10.2.jar" exported="true">
+		<attributes>
+			<attribute name="org.eclipse.jst.component.nondependency" value=""/>
+		</attributes>
+	</classpathentry>
+	<classpathentry sourcepath="/home/nitesh/.gradle/caches/modules-2/files-2.1/org.apache.lucene/lucene-sandbox/4.10.2/551b3217c44a2b3939d6c7ede993ea0d087986e3/lucene-sandbox-4.10.2-sources.jar" kind="lib" path="/home/nitesh/.gradle/caches/modules-2/files-2.1/org.apache.lucene/lucene-sandbox/4.10.2/8a0659f7238639c04b8feb97cd77f1ce6abe9d7f/lucene-sandbox-4.10.2.jar" exported="true">
+		<attributes>
+			<attribute name="org.eclipse.jst.component.nondependency" value=""/>
+		</attributes>
+	</classpathentry>
+	<classpathentry sourcepath="/home/nitesh/.gradle/caches/modules-2/files-2.1/org.apache.lucene/lucene-suggest/4.10.2/e3e4034a58cdba6577dc2d933140f13aa538f31f/lucene-suggest-4.10.2-sources.jar" kind="lib" path="/home/nitesh/.gradle/caches/modules-2/files-2.1/org.apache.lucene/lucene-suggest/4.10.2/13cce2bab963c860b6f4a6cda66b30475ab5ae68/lucene-suggest-4.10.2.jar" exported="true">
+		<attributes>
+			<attribute name="org.eclipse.jst.component.nondependency" value=""/>
+		</attributes>
+	</classpathentry>
+	<classpathentry sourcepath="/home/nitesh/.gradle/caches/modules-2/files-2.1/org.apache.lucene/lucene-misc/4.10.2/6bc7c7057f26d5dde32c202b2902ecee9ee2f0d8/lucene-misc-4.10.2-sources.jar" kind="lib" path="/home/nitesh/.gradle/caches/modules-2/files-2.1/org.apache.lucene/lucene-misc/4.10.2/35fd3d68b6728484712d7cbb0b4dea3bac671848/lucene-misc-4.10.2.jar" exported="true">
+		<attributes>
+			<attribute name="org.eclipse.jst.component.nondependency" value=""/>
+		</attributes>
+	</classpathentry>
+	<classpathentry sourcepath="/home/nitesh/.gradle/caches/modules-2/files-2.1/org.apache.lucene/lucene-join/4.10.2/ce4c06a6e1a790999de9a729a47554bd216c2475/lucene-join-4.10.2-sources.jar" kind="lib" path="/home/nitesh/.gradle/caches/modules-2/files-2.1/org.apache.lucene/lucene-join/4.10.2/66bbffc7e45b44401c3d49b8f86d61256674515/lucene-join-4.10.2.jar" exported="true">
+		<attributes>
+			<attribute name="org.eclipse.jst.component.nondependency" value=""/>
+		</attributes>
+	</classpathentry>
+	<classpathentry sourcepath="/home/nitesh/.gradle/caches/modules-2/files-2.1/org.apache.lucene/lucene-grouping/4.10.2/43b7469aa3eb4d1ac12916bd1a4b17aabdfc24b2/lucene-grouping-4.10.2-sources.jar" kind="lib" path="/home/nitesh/.gradle/caches/modules-2/files-2.1/org.apache.lucene/lucene-grouping/4.10.2/4adef4d65109c7dbd6a70c96cd67822b348734f5/lucene-grouping-4.10.2.jar" exported="true">
+		<attributes>
+			<attribute name="org.eclipse.jst.component.nondependency" value=""/>
+		</attributes>
+	</classpathentry>
+	<classpathentry sourcepath="/home/nitesh/.gradle/caches/modules-2/files-2.1/org.apache.lucene/lucene-spatial/4.10.2/85a0c25760f90014abc6abea3ee888caf23e7f09/lucene-spatial-4.10.2-sources.jar" kind="lib" path="/home/nitesh/.gradle/caches/modules-2/files-2.1/org.apache.lucene/lucene-spatial/4.10.2/326efe73adcc51115b53e31c71f5fc659ae48636/lucene-spatial-4.10.2.jar" exported="true">
+		<attributes>
+			<attribute name="org.eclipse.jst.component.nondependency" value=""/>
+		</attributes>
+	</classpathentry>
+	<classpathentry sourcepath="/home/nitesh/.gradle/caches/modules-2/files-2.1/javax.servlet/servlet-api/2.5/21599814ad9a605b86f3e6381571beccd861a32/servlet-api-2.5-sources.jar" kind="lib" path="/home/nitesh/.gradle/caches/modules-2/files-2.1/javax.servlet/servlet-api/2.5/5959582d97d8b61f4d154ca9e495aafd16726e34/servlet-api-2.5.jar" exported="true">
+		<attributes>
+			<attribute name="org.eclipse.jst.component.nondependency" value=""/>
+		</attributes>
+	</classpathentry>
+	<classpathentry sourcepath="/home/nitesh/.gradle/caches/modules-2/files-2.1/ch.qos.logback/logback-core/1.0.0/6b0ad3360ba11612e75aea121c3979a5a6750f90/logback-core-1.0.0-sources.jar" kind="lib" path="/home/nitesh/.gradle/caches/modules-2/files-2.1/ch.qos.logback/logback-core/1.0.0/b2893bbe71342232031f97faa1cf7bb4d99faced/logback-core-1.0.0.jar" exported="true">
+		<attributes>
+			<attribute name="org.eclipse.jst.component.nondependency" value=""/>
+		</attributes>
+	</classpathentry>
+	<classpathentry sourcepath="/home/nitesh/.gradle/caches/modules-2/files-2.1/com.spatial4j/spatial4j/0.4.1/c51cd6b83293a5e26993bd9848e2766654dfdddb/spatial4j-0.4.1-sources.jar" kind="lib" path="/home/nitesh/.gradle/caches/modules-2/files-2.1/com.spatial4j/spatial4j/0.4.1/4234d12b1ba4d4b539fb3e29edd948a99539d9eb/spatial4j-0.4.1.jar" exported="true">
+		<attributes>
+			<attribute name="org.eclipse.jst.component.nondependency" value=""/>
+		</attributes>
+	</classpathentry>
 </classpath>
