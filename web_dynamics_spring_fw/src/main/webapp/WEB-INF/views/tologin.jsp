@@ -115,7 +115,8 @@
 			<a href="./index.jsp"><img id="logo" src="resources/img/logo.png"
 				alt="Nova" /></a>
 			<div class="login-class">
-				<form action="loginservlet" method="post" id="loginform">
+				<script type="text/javascript" src="js/login-form-validation.js"></script>
+				<form action="./processlogin" action="#" method="post" id="loginform">
 					<table>
 						<tbody>
 							<tr>
