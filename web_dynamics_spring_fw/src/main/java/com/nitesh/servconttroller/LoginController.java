@@ -24,26 +24,27 @@ import com.nitesh.account.service.AccountService;
 @Component
 @Controller
 class LoginController {
-	//private static final long serialVersionUID = 1L;
-    Logger lgr = Logger.getLogger("com.nitesh.servconttroller.LoginController");   
-    private AccountService accountService;
-    private String ACCOUNT_ATTRIBUTE = "userAcnt";
-    @RequestMapping("/login")
+	// private static final long serialVersionUID = 1L;
+	Logger lgr = Logger.getLogger("com.nitesh.servconttroller.LoginController");
+	private AccountService accountService;
+	private String ACCOUNT_ATTRIBUTE = "userAcnt";
+
+	@RequestMapping("/login")
 	public String login() {
 		lgr.info("Inside Login Controller");
 		return "tologin";
 	}
-	
-	@RequestMapping(value="/processlogin", method=RequestMethod.POST)
+
+	@RequestMapping(value = "/processlogin", method = RequestMethod.POST)
 	public String handleLogin(@RequestParam String username,
-			@RequestParam String password,
-			HttpServletRequest request,HttpSession session)
-					throws AuthenticationException {
+			@RequestParam String password, HttpServletRequest request,
+			HttpSession session) throws AuthenticationException {
 		Account account = this.accountService.login(username, password);
-		session.setAttribute(ACCOUNT_ATTRIBUTE, account);
+		if (account != null) {
+			session.setAttribute(ACCOUNT_ATTRIBUTE, account);
+		} else {
+			return "/login";
+		}
 		return "/home";
 	}
 }
-
-
-
