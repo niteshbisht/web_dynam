@@ -1,7 +1,11 @@
 package com.nitesh.algos.sort;
 
-public class MergeSortDemo {
-	public static void main(String[] args) {
+import org.junit.Test;
+
+public class MergeSortTest {
+	
+	@Test
+	public void testMerge() {
 		MergeSort mgsort = new MergeSort();
 		int[] A = new int[9];
 		for (int i = 8; i >= 0; i--)
@@ -12,4 +16,6 @@ public class MergeSortDemo {
 			System.out.print(A[i]+" | ");
 		// System.out.println(b);
 	}
+	
+	
 }
