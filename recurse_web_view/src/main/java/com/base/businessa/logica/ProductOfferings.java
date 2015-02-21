@@ -3,6 +3,7 @@ package com.base.businessa.logica;
 import java.util.List;
 
 public class ProductOfferings {
+	
 	List<SimpleChildBundle> simpleChildBundle;
 	
 	List<ComplexChildBundles> complexChildBundle;
