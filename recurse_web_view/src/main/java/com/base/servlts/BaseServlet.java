@@ -1,5 +1,6 @@
 package com.base.servlts;
 
+import java.io.File;
 import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
@@ -11,6 +12,8 @@ import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
+
+import org.codehaus.jackson.map.ObjectMapper;
 
 import com.base.businessa.logica.ComplexChildBundles;
 import com.base.businessa.logica.ProductOfferings;
@@ -36,9 +39,9 @@ public class BaseServlet extends HttpServlet {
 			lst.add(smplchobject);
 		}
 		pdctpfr.setSimpleChildBundle(lst);
-		
+
 		List<SimpleChildBundle> lst2 = new ArrayList<SimpleChildBundle>();
-		
+
 		List<ComplexChildBundles> cmplexChild = new ArrayList<ComplexChildBundles>();
 		for (int i = 3; i < 7; i++) {
 			SimpleChildBundle smplchobject = new SimpleChildBundle();
@@ -72,8 +75,18 @@ public class BaseServlet extends HttpServlet {
 			HttpServletResponse response) throws ServletException, IOException {
 		// TODO Auto-generated method stub
 		System.out.println("Base Servlet");
-		request.setAttribute("product", pdctpfr);
-		RequestDispatcher rd=request.getRequestDispatcher("product.jsp");
+		ObjectMapper mapper = new ObjectMapper();
+		try {
+			File f = new File("./mapped.json");
+			String p =f.getAbsolutePath();
+			if (!f.exists())
+				f.createNewFile();
+			mapper.writeValue(f, pdctpfr);
+		} catch (Exception e) {
+			System.out.println("Exception " + e);
+		}
+		/* request.setAttribute("product", pdctpfr); */
+		RequestDispatcher rd = request.getRequestDispatcher("product.jsp");
 		rd.forward(request, response);
 	}
 

@@ -26,9 +26,6 @@
 </style>
 <body>
 	<%
-		ProductOfferings prod = (ProductOfferings) request
-				.getAttribute("product");
-		out.println(prod.toString());
 	%>
 
 	<script src="./d3.v3.min.js"></script>
@@ -45,7 +42,7 @@
 				"height", height).append("g").attr("transform",
 				"translate(40,0)");
 
-		d3.json("/d/4063550/flare.json", function(error, root) {
+		d3.json("./mapped.json", function(error, root) {
 			var nodes = cluster.nodes(root), links = cluster.links(nodes);
 
 			var link = svg.selectAll(".link").data(links).enter()
