@@ -15,3 +15,10 @@ alg_dynamics
 *.class
 *.classpath
 *.project
+*.pref
+*.bin
+*.lock
+*.jsdtscope
+*.component
+*.container
+*.name
