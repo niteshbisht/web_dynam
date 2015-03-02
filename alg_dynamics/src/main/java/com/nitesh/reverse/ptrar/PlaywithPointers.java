@@ -28,4 +28,18 @@ public class PlaywithPointers {
 		c.value=s;
 		return c;
 	}
+	
+	public CharPtr reverseObject(CharPtr c){
+		CharPtr current = c.charObj;
+		CharPtr next;
+		CharPtr new_r=null;
+		while(current!=null){
+			next = current.charObj;
+			current.charObj=new_r;
+			new_r=current;
+			current=next;	
+		}
+		c.charObj=new_r;
+		return c;
+	}
 }

@@ -1,0 +1,22 @@
+apply plugin: 'java'
+apply plugin: 'eclipse'
+
+repositories {
+    mavenCentral()
+}
+
+def libsDir= 'build/libs'
+dependencies {
+    compile(
+    [ group: 'commons-logging', name: 'commons-logging', version: '1.2' ],
+	[ group: 'commons-configuration', name: 'commons-configuration', version: '1.10' ],
+	[ group: 'org.elasticsearch', name: 'elasticsearch', version: '1.4.2' ],
+	[ group: 'com.github.rholder', name: 'guava-retrying', version: '1.0.7'],
+	[ group: 'joda-time', name: 'joda-time', version: '2.7'],
+	[ group: 'org.apache.commons', name: 'commons-lang3', version: '3.3.2' ],
+	[ group: 'org.slf4j', name: 'slf4j-api', version: '1.6.1' ],
+	[ group: 'org.slf4j', name: 'jcl-over-slf4j', version: '1.6.1' ],
+	[ group: 'org.slf4j', name: 'slf4j-log4j12', version: '1.6.1' ],
+	[ group: 'log4j', name: 'log4j', version: '1.2.16' ]
+	)
+}

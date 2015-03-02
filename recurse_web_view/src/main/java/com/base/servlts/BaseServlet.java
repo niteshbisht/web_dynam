@@ -14,10 +14,10 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
 import org.codehaus.jackson.map.ObjectMapper;
-
-import com.base.businessa.logica.ComplexChildBundles;
+import com.base.businessa.logica.ProductComponent;
 import com.base.businessa.logica.ProductOfferings;
-import com.base.businessa.logica.SimpleChildBundle;
+import com.google.gson.Gson;
+import com.google.gson.GsonBuilder;
 
 /**
  * Servlet implementation class BaseServlet
@@ -32,26 +32,33 @@ public class BaseServlet extends HttpServlet {
 	public BaseServlet() {
 		super();
 		pdctpfr = new ProductOfferings();
-		List<SimpleChildBundle> lst = new ArrayList<SimpleChildBundle>();
+		List<ProductComponent> lst = new ArrayList<ProductComponent>();
 		for (int i = 0; i < 3; i++) {
-			SimpleChildBundle smplchobject = new SimpleChildBundle();
-			smplchobject.setProductName("Product Number : " + i);
+			ProductComponent smplchobject = new ProductComponent();
+			smplchobject.setProductDisplayName("Product Number : " + i);
+			smplchobject.setComplexChildBundles(null);
+			ProductComponent pdct2 = new ProductComponent();
+			pdct2.setProductDisplayName("Product Number : " + i+" : "+i);
+			pdct2.setComplexChildBundles(null);
+			pdct2.setSimpleBundle(null);
+			List p = new ArrayList<ProductComponent>();
+			p.add(pdct2);
+			smplchobject.setSimpleBundle(p);
 			lst.add(smplchobject);
 		}
 		pdctpfr.setSimpleChildBundle(lst);
+		List<ProductComponent> lst2 = new ArrayList<ProductComponent>();
 
-		List<SimpleChildBundle> lst2 = new ArrayList<SimpleChildBundle>();
-
-		List<ComplexChildBundles> cmplexChild = new ArrayList<ComplexChildBundles>();
+		List<ProductComponent> cmplexChild = new ArrayList<ProductComponent>();
 		for (int i = 3; i < 7; i++) {
-			SimpleChildBundle smplchobject = new SimpleChildBundle();
-			smplchobject.setProductName("Child Product Complex Number : " + i);
+			ProductComponent smplchobject = new ProductComponent();
+			smplchobject.setProductDisplayName("Child Product Number : " + i+" : "+i);
 			lst2.add(smplchobject);
-			ComplexChildBundles cmpBundles = new ComplexChildBundles();
-			cmpBundles.setChildInsideComplexChildBundle(lst2);
-			ComplexChildBundles cmpBundles2 = new ComplexChildBundles();
+			ProductComponent cmpBundles = new ProductComponent();
+			cmpBundles.setSimpleBundle(lst2);
+			ProductComponent cmpBundles2 = new ProductComponent();
 			cmpBundles2.setComplexChildBundles(null);
-			cmpBundles2.setChildInsideComplexChildBundle(lst2);
+			cmpBundles2.setSimpleBundle(lst2);
 			cmplexChild.add(cmpBundles);
 			cmplexChild.add(cmpBundles2);
 		}
@@ -75,7 +82,10 @@ public class BaseServlet extends HttpServlet {
 			HttpServletResponse response) throws ServletException, IOException {
 		// TODO Auto-generated method stub
 		System.out.println("Base Servlet");
-		ObjectMapper mapper = new ObjectMapper();
+		GsonBuilder builder = new GsonBuilder();
+        Gson gson = builder.create();
+        System.out.println(gson.toJson(pdctpfr));
+		/*ObjectMapper mapper = new ObjectMapper();
 		try {
 			File f = new File("./mapped.json");
 			String p =f.getAbsolutePath();
@@ -84,7 +94,7 @@ public class BaseServlet extends HttpServlet {
 			mapper.writeValue(f, pdctpfr);
 		} catch (Exception e) {
 			System.out.println("Exception " + e);
-		}
+		}*/
 		/* request.setAttribute("product", pdctpfr); */
 		RequestDispatcher rd = request.getRequestDispatcher("product.jsp");
 		rd.forward(request, response);

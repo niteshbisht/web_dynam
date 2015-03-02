@@ -4,23 +4,23 @@ import java.util.List;
 
 public class ProductOfferings {
 	
-	List<SimpleChildBundle> simpleChildBundle;
+	List<ProductComponent> simpleChildBundle;
 	
-	List<ComplexChildBundles> complexChildBundle;
+	List<ProductComponent> complexChildBundle;
 
-	public List<ComplexChildBundles> getComplexChildBundle() {
+	public List<ProductComponent> getComplexChildBundle() {
 		return complexChildBundle;
 	}
 
-	public void setComplexChildBundle(List<ComplexChildBundles> complexChildBundle) {
+	public void setComplexChildBundle(List<ProductComponent> complexChildBundle) {
 		this.complexChildBundle = complexChildBundle;
 	}
 
-	public List<SimpleChildBundle> getSimpleChildBundle() {
+	public List<ProductComponent> getSimpleChildBundle() {
 		return simpleChildBundle;
 	}
 
-	public void setSimpleChildBundle(List<SimpleChildBundle> simpleChildBundle) {
+	public void setSimpleChildBundle(List<ProductComponent> simpleChildBundle) {
 		this.simpleChildBundle = simpleChildBundle;
 	}
 }
