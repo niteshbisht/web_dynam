@@ -11,3 +11,7 @@
 /spring_core_dynamix/bin/*
 /web_dynamics_spring_fw/build/*
 /web_dynamics_spring_fw/WebContent/WEB-INF/lib/*
+alg_dynamics
+*.class
+*.classpath
+*.project
