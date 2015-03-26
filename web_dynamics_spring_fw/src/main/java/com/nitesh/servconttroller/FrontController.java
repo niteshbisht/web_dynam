@@ -4,6 +4,7 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
+import org.springframework.stereotype.Component;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
@@ -12,14 +13,15 @@ import org.springframework.web.bind.annotation.ResponseBody;
 /**
  * Front Controller implementation class instead of FrontServlet
  */
-@Controller
+//@Component
+//@Controller
 public class FrontController {
 	private static final long serialVersionUID = 1L;
 	
-	@RequestMapping(value = "/front", method = RequestMethod.GET)
+	/*@RequestMapping(value = "/", method = RequestMethod.GET)
 	public @ResponseBody String front() {
 		return "redirect:/index";
-	}
+	}*/
 	
 	/**
 	 * @see HttpServlet#HttpServlet()

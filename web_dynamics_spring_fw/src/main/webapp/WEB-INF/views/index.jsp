@@ -1,3 +1,4 @@
+<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>
 <!DOCTYPE  html>
 <html>
 	<head>
@@ -100,7 +101,7 @@
 						</form>
 					</div>
 					<!-- ENDS search -->
-				<a href="/login"> proceed to login</a>
+				<a href="./login"> proceed to login</a>
 				</div>
 				<!-- ENDS wrapper-header -->					
 			</div>
@@ -141,7 +142,7 @@
 								</ul>
 							</li>
 							<li><a href="./contact.jsp">Contact<span class="subheader">Get in touch</span></a></li>
-							<li><a href="./login">Login<span class="subheader">Proceed to Secure</span></a></li>
+							<li><a href="<c:url value="/login"/>" >Login<span class="subheader">Proceed to Secure</span></a></li>
 						</ul>
 						<!-- Navigation -->
 					</div>
