@@ -115,7 +115,7 @@
 			<a href="./index.jsp"><img id="logo" src="resources/img/logo.png"
 				alt="Nova" /></a>
 			<div class="login-class">
-				<form action="loginservlet" method="post" id="loginform">
+				<form action="./processlogin" method="post" id="loginform">
 					<table>
 						<tbody>
 							<tr>

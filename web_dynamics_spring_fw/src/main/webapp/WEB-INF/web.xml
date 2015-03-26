@@ -3,6 +3,10 @@
 	version="3.0">
 	<display-name>web_dynamix_spring_fw</display-name>
 
+<!--<listener>
+		<listener-class>org.springframework.web.context.ContextLoaderListener</listener-class>
+	</listener> -->
+	
 	<!-- Processes application requests -->
 	<servlet>
 		<servlet-name>webDynamix</servlet-name>
