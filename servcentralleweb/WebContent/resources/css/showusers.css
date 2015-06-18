@@ -1,0 +1,31 @@
+body {
+	margin: 0;
+	color: #51565b;
+	font-family: Arial, Helvetica, sans-serif;
+	line-height: 1;
+	font-size: 100%;
+}
+
+.header {
+	width: auto;
+	height: 100px;
+	color: aqua;
+	background-color: aqua; 
+}
+
+table.mytable {
+	position: fixed;
+	top : 30em;
+	bottom : 10em;
+	right: 30em;
+	left: 40em;
+	border-color: #00ff00;
+	border-width: thick;
+	table-layout: inherit;
+	border-style: solid;
+}
+
+table.mytable, td {
+	font-style:italic;
+	margin: 2em;
+}

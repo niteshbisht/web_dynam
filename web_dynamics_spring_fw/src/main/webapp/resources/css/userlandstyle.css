@@ -1,0 +1,246 @@
+/* IMPORTS ------------------------------------------------------------*/
+
+@import url('reset.css');
+
+@import url('styled-elements.css');
+
+/* HACKS ------------------------------------------------------------*/
+
+.clear {
+	clear: both;
+	height: 1px;
+}
+
+.inv {
+	display: none;
+}
+
+.alignleft {
+	float: left;
+	margin: 5px 10px 5px 0px;
+}
+
+
+/* GENERAL ------------------------------------------------------------*/
+
+body {
+	line-height: 1;
+	color: #51565b;
+	background: #f1f1f1 url(../img/bg/patterns/noise.png);
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 100%;
+}
+
+#header {
+	height: 117px;
+	position: relative;
+	z-index: 10;
+	background: #07BDB8 url(../img/header-glow.png) top center no-repeat;
+}
+
+#logo {
+	position: absolute;
+	top: 35px;
+	left: 30px;
+}
+
+#main {
+	width: 100%;
+}
+
+.wrapper {
+	width: 966px;
+	margin: 0px auto;
+	position: relative;
+}
+
+/* SEARCH --------------------------------------------------------*/
+
+.top-search {
+	position: absolute;
+	top: 70px;
+	right: 70px;
+}
+
+#searchform #s {
+	color: #7e7e7e;
+	font-size: 10px;
+	width: 180px;
+	height: 28px;
+	padding: 0px 35px 0px 10px;
+	border: 0;
+	background: url(../img/search.png) no-repeat transparent;
+}
+
+#searchform #searchsubmit {
+	position: absolute;
+	top: 0px;
+	right: 10px;
+	width: 30px;
+	height: 25px;
+	border: 0px;
+	background: transparent;
+}
+
+/* MENU ------------------------------------------------------------*/
+
+#menu {
+	width: 100%;
+	padding-top: 1px;
+	margin-bottom: 0px;
+	background: #f858ef;
+	background: -webkit-gradient(linear, left top, right bottom, from(#f858ef), to(#ffe413));
+	background: -moz-linear-gradient(left,  #f858ef,  #ffe413);
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#f858ef', endColorstr='#ffe413', GradientType=1);
+}
+
+#menu-holder {
+	width: 100%;
+	height: 79px;
+	background: url(../img/menu-bg.png) repeat-x;
+}
+
+
+/* NAVIGATION --------------------------------------------------------*/
+
+#nav2 {
+	display: block;
+	position: absolute;
+	top: 0px;
+	left: 30px;
+	height: 79px;
+	width: 906px;
+}
+
+#nav2> li {
+	display: block;
+	float: left;
+	height: 100%;
+	margin-right: 32px;
+}
+
+#nav {
+  display: block;
+  float: left;
+  position: absolute;
+  border-radius: 4px;
+  margin-top: 8px;
+  top: 0px;
+  left: 30px;
+  height: 79px;
+  width: 906px;
+}
+
+#nav > li {
+	display: block;
+	float: left;
+	height: 100%;
+	margin-right: 32px;
+}
+
+#nav > li:first-child {
+}
+
+#nav > li > a {
+	display: block;
+	font-size: 16px;
+	color: #bac0c9;
+	text-decoration: none;
+	margin-top: 20px;
+	text-shadow: 0px -2px rgba(0, 0, 0, .8);
+}
+
+#nav > li > a > span.subheader {
+	display: block;
+	font-size: 11px;
+	color: #656b74;
+	font-style: italic;
+	margin-top: 10px;
+}
+
+#nav > li.current-menu-item {
+	background: url(../img/menu-arrow.png) no-repeat center bottom;
+}
+
+#nav > li:hover > a {
+	color: #DA1919;
+}
+
+/* sub navigation */
+
+#nav > li ul {
+	display: block;
+	margin-top: 33px;
+	background: #1d2023;
+	border-radius: 0px 10px 0px 10px;
+	-moz-border-radius: 0px 0px 10px 10px;
+	-webkit-border-radius: 0px 0px 10px 10px;
+	-webkit-box-shadow: 0px 3px 2px rgba(0,0,0,0.4);
+	-moz-box-shadow: 0px 3px 2px rgba(0,0,0,0.4);
+	box-shadow: 0px 3px 2px rgba(0,0,0,0.4);
+}
+
+#nav > li > ul ul {
+	margin-top: 0px;
+	border-radius: 0px 10px 10px 10px;
+	-moz-border-radius: 0px 10px 10px 10px;
+	-webkit-border-radius: 0px 10px 10px 10px;
+}
+
+#nav > li ul li a {
+	display: block;
+	padding: 10px 15px;
+	display: block;
+	font-size: 11px;
+	color: #bac0c9;
+	text-decoration: none;
+}
+
+#nav > li ul li a span {
+	display: block;
+}
+
+#nav > li ul li a:hover {
+	background: #000;
+	color: #fff;
+}
+
+#nav > li ul li a:hover {
+	background: #000;
+	color: #fff;
+}
+
+#nav > li ul li:last-child a:hover {/* last item its rounded at bottom */
+	border-radius: 0px 0px 10px 10px;
+	-moz-border-radius: 0px 0px 10px 10px;
+	-webkit-border-radius: 0px 0px 10px 10px;
+}
+
+/* Ends Nav */
+
+
+/* TITLE --------------------------------------------------------*/
+
+#page-title {
+	overflow: hidden;
+	height: 103px;
+	margin-bottom: 30px;
+	background: url(../img/tabs-divider.png) repeat-x bottom center;
+	text-shadow: 1px 1px rgba(255, 255, 255, 1);
+}
+
+/* PAGES --------------------------------------------------------*/
+
+#page-content {
+	float: left;
+	width: 906px;
+	margin-left: 30px;
+	line-height: 1.5em;
+}
+
+/* footer section */
+#footer {
+	position: relative;
+	background: #BBDF13 url(../img/footer-glow.png) no-repeat top center;
+	color: #fff;
+}

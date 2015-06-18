@@ -133,7 +133,7 @@
 											onblur="clearPassInput(this)" />
 									</div></td>
 
-								<td><input type="submit" id="loginsubmit" value=" " /></td>
+								<td><input type="submit" id="loginsubmit" value=" Login " /></td>
 							</tr>
 							
 							<tr>

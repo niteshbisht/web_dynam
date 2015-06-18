@@ -1,23 +1,23 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <beans xmlns="http://www.springframework.org/schema/beans"
-xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-xsi:schemaLocation="http://www.springframework.org/schema/beans
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans
 http://www.springframework.org/schema/beans/spring-beans.xsd">
 
-<bean id="placeholderConfig"
-class="org.springframework.beans.factory.config.PropertyPlaceholderConfigurer">
-<property name="location" value="classpath:reader-beans.properties" />
-</bean>
+	<bean id="placeholderConfig"
+		class="org.springframework.beans.factory.config.PropertyPlaceholderConfigurer">
+		<property name="location" value="classpath:reader-beans.properties" />
+	</bean>
 
-<bean name="baseInjector" class="com.dynamix.constructor.inject.BaseClassInject">
-<constructor-arg ref="childInjectA" />
-<constructor-arg ref="childInjectB" />
-</bean>
-<bean name="childInjectA" class="com.dynamix.constructor.inject.ChildInjectA">
-<constructor-arg value="child A" />
-</bean>
-<bean name="childInjectB" class="com.dynamix.constructor.inject.ChildInjectB">
-<constructor-arg value="child B" />
-</bean>
+	<bean name="baseInjector" class="com.dynamix.constructor.inject.BaseClassInject">
+		<constructor-arg ref="childInjectA" />
+		<constructor-arg ref="childInjectB" />
+	</bean>
+	<bean name="childInjectA" class="com.dynamix.constructor.inject.ChildInjectA">
+		<constructor-arg value="child A" />
+	</bean>
+	<bean name="childInjectB" class="com.dynamix.constructor.inject.ChildInjectB">
+		<constructor-arg value="child B" />
+	</bean>
 
 </beans>

@@ -1,0 +1,57 @@
+<html>
+<head>
+	<title>CSS Dropdown Menu</title>
+  <link href="F:/webdevprojects/web_dynam/web_dynamics_spring_fw/src/main/webapp/resources/css/dropdown.css" rel="stylesheet" >
+</head>
+<body class="home">
+	<div id="header"> 
+		<!-- wrapper-header -->
+				<div class="wrapper">
+					<a href="./index.jsp"><img id="logo" src="C:/Users/sysxcomintl/Desktop/webproj/logo/logo.png"  alt="WebDynamixInc" /></a>
+					<!-- search -->
+					<div class="top-search">
+						<form  method="get" id="searchform" action="#">
+							<div>
+								<input type="text" value="Search..." name="s" id="s" onfocus="defaultInput(this)" onblur="clearInput(this)" />
+								<input type="submit" id="searchsubmit" value=" " />
+							</div>
+						</form>
+					</div>
+					<!-- ENDS search -->
+				</div>
+				<!-- ENDS wrapper-header -->
+	</div>    
+    <a class="logo" href="#"></a>
+    
+    <ul class="main-nav">
+      
+      <li><a href="#">Home</a></li>
+      <li class="dropdownabout"><a href="#">About Us</a>
+	  <ul class="drop-navabout">
+		<li><a href="#">Who We are ?</a></li>
+        <li><a href="#">What we do ?</a></li>
+		<li><a href="#">Team</a></li>
+	  </ul>
+	  </li>
+      <li class="dropdown">
+        <a href="#">Work</a>
+        
+        <ul class="drop-nav">
+          <li><a href="#">Design</a></li>
+          <li><a href="#">Development</a></li>
+          <li class="flyout">
+            <a href="#">Photography</a>
+            
+            <ul class="flyout-nav">
+              <li><a href="#">Nature</a></li>
+              <li><a href="#">People</a></li>
+              <li><a href="#">Pets</a></li>         
+            </ul>
+          </li>
+          <li><a href="#">Writing</a></li>       
+        </ul>
+      </li>
+      <li><a href="#">Contact</a></li>
+    </ul>
+</body>
+</html>

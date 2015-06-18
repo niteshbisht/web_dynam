@@ -22,3 +22,5 @@ alg_dynamics
 *.component
 *.container
 *.name
+/servcentralleweb/WebContent/WEB-INF/lib/*
+*.jar

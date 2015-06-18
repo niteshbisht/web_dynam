@@ -1,0 +1,30 @@
+body {
+	margin: 0;
+	color: #51565b;
+	font-family: Arial, Helvetica, sans-serif;
+	line-height: 1;
+	font-size: 100%;
+}
+
+.details {
+	text-align: center;
+	top: 100px;
+	left: 400px;
+	position: absolute;
+	height: 400px;
+	width: 500px;
+	background-color: red;
+	padding: 2px 2px 2px 2px;
+	border: dashed;
+	border-color: black;
+}
+
+#top-banner {
+	height: 100px;
+	width: 100px;
+}
+#top-banner#logo{
+	width: 50px;
+	height: 30px;
+	-webkit-mask-size: 20px;
+}
