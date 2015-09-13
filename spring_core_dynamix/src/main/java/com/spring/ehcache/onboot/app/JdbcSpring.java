@@ -13,6 +13,10 @@ import org.springframework.jdbc.core.CallableStatementCallback;
 import org.springframework.jdbc.core.JdbcTemplate;
 import org.springframework.jdbc.core.PreparedStatementCallback;
 
+import com.base.mysql.tree.traversal.TreeStructure;
+import com.base.mysql.tree.traversal.TreeTraversal;
+import com.fasterxml.jackson.core.JsonProcessingException;
+import com.fasterxml.jackson.databind.ObjectMapper;
 import com.mysql.jdbc.JDBC4ResultSet;
 
 public class JdbcSpring {
@@ -27,7 +31,7 @@ public class JdbcSpring {
 		this.jdbcTemplate = jdbcTemplate;
 	}
 
-	public static void main(String[] args) {
+	public static void main(String[] args) throws JsonProcessingException {
 		ctxt = new ClassPathXmlApplicationContext("ehcache/ehcache-jdbc.xml");
 		JdbcSpring jd = ctxt.getBean("jdbcSpring", JdbcSpring.class);
 		String query = "select * from tree;";
@@ -38,30 +42,22 @@ public class JdbcSpring {
 		 * row.get("col1"); System.out.println(res); }
 		 */
 
-		ResultSet rs = null;
+		TreeStructure rs = null;
+		TreeTraversal tr = new TreeTraversal();
 		rs = jd.jdbcTemplate.execute(query,
-				new CallableStatementCallback<ResultSet>() {
+				new CallableStatementCallback<TreeStructure>() {
 					@Override
-					public ResultSet doInCallableStatement(CallableStatement arg0)
+					public TreeStructure doInCallableStatement(CallableStatement arg0)
 							throws SQLException, DataAccessException {
 						// TODO Auto-generated method stub
 						ResultSet rs = arg0.executeQuery();
 						int n = rs.getMetaData().getColumnCount();
-						System.out.println(n);
-						return arg0.executeQuery();
+						TreeStructure ts = tr.getDataJsonFromResultSet(rs);
+						return ts;
 					}
 				});
-		try {
-			int n = rs.getMetaData().getColumnCount();
-			while (rs.next()) {
-				for (int j = 1; j <= n; j++) {
-					System.out.println(rs.getString(j));
-				}
-			}
-		} catch (SQLException e) {
-			// TODO Auto-generated catch block
-			e.printStackTrace();
-		}
+		ObjectMapper om = new ObjectMapper();
+		om.writeValueAsString(rs);
 	}
 
 }
