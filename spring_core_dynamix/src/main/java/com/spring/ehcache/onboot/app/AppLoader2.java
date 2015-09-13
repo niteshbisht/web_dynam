@@ -50,6 +50,26 @@ public class AppLoader2 {
 			}
 			System.out.println();
 		}
+		
+		aqtTR = aqt.getTreeStructureIface();
+		tqtTR = tqt.getTreeStructureIface();
+		jqtTR = jqt.getTreeStructureIface();
+	
+		System.out.println("Second Time");
+		
+		ti[0] = aqtTR;
+		ti[1] = tqtTR;
+		ti[2] = jqtTR;
+		for (int i = 0; i < 3; i++) {
+			System.out.println();
+			try {
+				System.out.println(om.writeValueAsString(ti[i]));
+			} catch (JsonProcessingException e) {
+				// TODO Auto-generated catch block
+				e.printStackTrace();
+			}
+			System.out.println();
+		}
 	}
 
 }
