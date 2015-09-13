@@ -2,7 +2,27 @@
 <ehcache xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance'
 	xsi:noNamespaceSchemaLocation='http://ehcache.org/ehcache.xsd'>
 	<defaultCache eternal='true' maxElementsInMemory='1000000'
-		overflowToDisk='false' />
-	<cache name='employee' maxElementsInMemory='1000000' eternal='true'
+		overflowToDisk='false'>
+		<!-- <bootstrapCacheLoaderFactory
+			class="com.spring.ehcache.onboot.app.MyBootstrapCacheLoaderFactory"
+			properties="async=true" /> -->
+	</defaultCache>
+	<!-- <cache name='employee' maxElementsInMemory='1000000' eternal='true' 
+		overflowToDisk='false' /> -->
+
+	<cache name='appqt' maxElementsInMemory='1000000' eternal='true'
+		overflowToDisk='false'>
+		<!-- <bootstrapCacheLoaderFactory
+			class="com.spring.ehcache.onboot.app.MyBootstrapCacheLoaderFactory"
+			properties="async=true" /> -->
+	</cache>
+	<cache name='travisci' maxElementsInMemory='1000000' eternal='true'
+		overflowToDisk='false'>
+		<!-- <bootstrapCacheLoaderFactory
+			class="com.spring.ehcache.onboot.app.MyBootstrapCacheLoaderFactory"
+			properties="async=true" /> -->
+	</cache>
+
+	<cache name='jenkins' maxElementsInMemory='1000000' eternal='true'
 		overflowToDisk='false' />
 </ehcache>

@@ -57,7 +57,7 @@ public class JdbcSpring {
 					}
 				});
 		ObjectMapper om = new ObjectMapper();
-		om.writeValueAsString(rs);
+		System.out.println(om.writeValueAsString(rs));
 	}
 
 }

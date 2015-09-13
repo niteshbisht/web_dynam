@@ -37,30 +37,16 @@ public class UserDAO implements UserIface {
 			}
 		}
 		TreeTraversal trtrav = new TreeTraversal();
-		ResultSet rs = jdbcTemplate.execute(query,
-				new PreparedStatementCallback<ResultSet>() {
+		TreeStructure ts = jdbcTemplate.execute(query,
+				new PreparedStatementCallback<TreeStructure>() {
 					@Override
-					public ResultSet doInPreparedStatement(PreparedStatement ps)
+					public TreeStructure doInPreparedStatement(PreparedStatement ps)
 							throws DataAccessException, SQLException {
 						ResultSet rs = ps.executeQuery();
-						return rs;
+						TreeStructure ts = trtrav.getDataJsonFromResultSet(rs);
+						return ts;
 					}
 				});
-		boolean v = false;
-		try {
-			v = rs.isClosed();
-		} catch (SQLException e1) {
-			// TODO Auto-generated catch block
-			e1.printStackTrace();
-		}
-		System.out.println(v);
-		TreeStructure ts = null;
-		try {
-			ts = trtrav.getDataJsonFromResultSet(rs);
-		}catch (SQLException e) {
-			// TODO Auto-generated catch block
-			e.printStackTrace();
-		}
 		return ts;
 	}
 
