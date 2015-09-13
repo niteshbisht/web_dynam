@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:context="http://www.springframework.org/schema/context"
+	xmlns:ehcache="http://ehcache-spring-annotations.googlecode.com/svn/schema/ehcache-spring"
+	xmlns:cache="http://www.springframework.org/schema/cache"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
+	http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context.xsd
+	http://www.springframework.org/schema/cache http://www.springframework.org/schema/cache/spring-cache.xsd
+	http://ehcache-spring-annotations.googlecode.com/svn/schema/ehcache-spring http://ehcache-spring-annotations.googlecode.com/svn/schema/ehcache-spring/ehcache-spring-1.2.xsd">
+
+	<!-- <cache:annotation-driven proxy-target-class="true" /> -->
+
+	<bean id="ds"
+		class="org.springframework.jdbc.datasource.DriverManagerDataSource">
+		<property name="driverClassName" value="com.mysql.jdbc.Driver" />
+		<property name="url" value="jdbc:mysql://localhost:3306/sqlpract" />
+		<property name="username" value="root" />
+		<property name="password" value="welcome" />
+	</bean>
+
+	<bean id="jdbcTemplate" class="org.springframework.jdbc.core.JdbcTemplate">
+		<property name="dataSource" ref="ds"></property>
+	</bean>
+
+	<bean id="jdbcSpring" class="com.spring.ehcache.onboot.app.JdbcSpring">
+		<property name="jdbcTemplate" ref="jdbcTemplate" />
+	</bean>
+
+	<!-- <bean id="appQt" class="com.spring.ehcache.onboot.app.caches.AppQTCache">
+		<property name="udao" ref="udao" />
+	</bean>
+
+	<bean id="travisQt" class="com.spring.ehcache.onboot.app.caches.TravisQTCache">
+		<property name="udao" ref="udao" />
+	</bean>
+
+	<bean id="jenkinsQt" class="com.spring.ehcache.onboot.app.caches.JenkinsQTCache">
+		<property name="udao" ref="udao" />
+	</bean>
+
+	<bean id="myBootstrapCacheLoaderFactory"
+		class="com.spring.ehcache.onboot.app.MyBootstrapCacheLoaderFactory">
+		<property name="aqt">
+			<ref bean="appQt" />
+		</property>
+		<property name="jqt">
+			<ref bean="jenkinsQt" />
+		</property>
+		<property name="tqt">
+			<ref bean="travisQt" />
+		</property>
+	</bean>
+
+	<bean id='cacheManager' class='org.springframework.cache.ehcache.EhCacheCacheManager'>
+		<property name="cacheManager" ref="ehcacheManagerFactory"></property>
+	</bean>
+
+	<bean id='ehcacheManagerFactory'
+		class="org.springframework.cache.ehcache.EhCacheManagerFactoryBean">
+		<property name="configLocation" value="ehcache/ehcache.xml"></property>
+		<property name="shared" value="true"></property>
+	</bean>
+
+	<bean id="ehCacheFactory" class="org.springframework.cache.ehcache.EhCacheFactoryBean">
+		<property name="cacheManager" ref="ehcacheManagerFactory" />
+		<property name="bootstrapCacheLoader" ref="myBootstrapCacheLoaderFactory"></property>
+	</bean>
+
+	<bean id="mycacheClass" class="com.spring.ehcache.onboot.app.MyCacheManager"> 
+		<property name="cacheMan" ref="cacheManager" /> </bean>
+
+	<bean id="empbean" class="com.spring.ehcache.onboot.app.Employee"></bean> -->
+</beans>
