@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html data-ng-app="demoApp">
+<head>
+<meta charset="ISO-8859-1">
+<title></title>
+<script type="text/javascript">
+	history.pushState({
+		page : 1
+	}, "title 1", "#nbb");
+	window.onhashchange = function(event) {
+		window.location.hash = "nbb";
+	}
+</script>
+<link rel="stylesheet" type="text/css" href="./resources/css/style2.css"></link>
+</head>
+<body onLoad="backButtonOverride();">
+
+	<div class="col-2">
+		Search: <input ng-model="query">
+	</div>
+	<div class='container' data-ng-controller="SimpleController">
+		<p>Looping through data</p>
+		<ul>
+			<li
+				data-ng-repeat="cust in customers | filter:query | orderBy:'city'">{{cust.name
+				| uppercase}} : {{cust.city}}</li>
+		</ul>
+	</div>
+	<div class="container2">
+		<label>Click me to toggle: <input type="checkbox"
+			ng-model="checked"></label><br />
+		<button ng-model="button" ng-disabled="checked">Click Me!</button>
+	</div>
+
+	<div data-ng-app="demoApp" data-ng-controller="studentController">
+		<table border="0">
+
+			<tr>
+				<td>Enter first name:</td>
+				<td><input type="text" ng-model="student.firstName"></td>
+			</tr>
+			<tr>
+				<td>Enter last name:</td>
+				<td><input type="text" ng-model="student.lastName"></td>
+			</tr>
+			<tr>
+				<td>Name:</td>
+				<td>{{student.fullName()}}</td>
+			</tr>
+			<tr>
+				<td>Subject:</td>
+				<td>
+					<table>
+						<tr>
+							<th>Name</th>
+							<th>Marks</th>
+						</tr>
+						<tr ng-repeat="subject in student.subjects">
+							<td>{{ subject.name }}</td>
+							<td>{{ subject.marks }}</td>
+						</tr>
+					</table>
+				</td>
+			</tr>
+		</table>
+	</div>
+
+	<div>
+		<p>Total click: {{ clickCounter }}</p>
+		</td>
+		<button ng-click="clickCounter = clickCounter + 1">Click Me!</button>
+	</div>
+
+	<div>
+		<input type="checkbox" ng-model="showHide2">Hide Button
+		<button ng-hide="showHide2">Click Me!</button>
+
+		<input type="checkbox" ng-model="showHide1">Show Button
+		<button ng-show="showHide1">Click Me!</button>
+	</div>
+	<script type="text/javascript"
+		src="./resources/jquerry/external/jquery/jquery.js"></script>
+	<script type="text/javascript" src="./resources/js/angular.js"></script>
+	<script type="text/javascript"
+		src="./resources/angular_apps/data_controller.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Web_kikstart</title>
+<link rel="stylesheet" type="text/css" href="./resources/css/style.css"
+	media="screen"></link>
+<!--[if lt IE 9]>
+<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+<![endif]-->
+<!-- <link rel="stylesheet"
+	href="./resources/bootstrap/css/bootstrap.min.css">
+<script src="./resources/jquerry/external/jquery/jquery.js"></script>
+<script src="./resources/bootstrap/js/bootstrap.min.js"></script> -->
+<script src="./resources/modernizr/modernizr.js"></script>
+<script src="./resources/jquerry/external/jquery/jquery.js"></script>
+<script src="./resources/jquerry/jquery-ui.js"></script>
+<link href="./resources/jquerry/jquery-ui.css" rel="stylesheet">
+<script type="text/javascript" src="./resources/js/start.js"></script>
+</head>
+<body onload="showSystemDate()">
+	<div id="header">
+		<div id="systemdate"></div>
+		<div id="logo">
+			<img id="logoimg" alt="" src="./resources/img/logo.png">
+		</div>
+		<div id="search">
+			<form>
+				<input type="search" name="query"><button type="submit">Search</button>
+			</form>
+		</div>
+	</div>
+	<nav>
+		<ul>
+			<li><a href="#about.html">Home</a></li>
+			<li><a href="#blog.html">Blog</a></li>
+			<li><a href="#news.html">News</a></li>
+			<li><a href="./login.html">Login</a></li>
+			<li><a href="./angular.html">Angular</a></li>
+		</ul>
+	</nav>
+
+	<div class='userform'>
+		<form>
+			<p>
+				<label>Appointment Date and Time <input type="date"
+					name="dateAndTime" min="2011-03-15" max="2019-03-14"></label>
+			</p>
+			<p>
+				<label>Time <input type="time" name="time" min="08:00"
+					max="18:00"></label>
+			</p>
+			<p>
+				<label>Volume <input type="range" name="volume" min="0"
+					max="10" step=".5" value="5"></label>
+			</p>
+			<p>
+				<label>Background color <input type="color" name="bg"></label>
+			</p>
+			<p>
+				<button type="submit">Submit</button>
+			</p>
+		</form>
+	</div>
+
+	<button id="bid" onclick="webstart()">hey click me</button>
+
+	<footer class="footer"> </footer>
+</body>
+</html>

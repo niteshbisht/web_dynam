@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Web_kikstart</title>
+<link rel="stylesheet" type="text/css" href="./resources/css/style.css"
+	media="screen"></link>
+<script type="text/javascript" src="./resources/js/start.js"></script>
+<!--[if lt IE 9]>
+<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+<![endif]-->
+<!-- <link rel="stylesheet"
+	href="./resources/bootstrap/css/bootstrap.min.css">
+<script src="./resources/jquerry/external/jquery/jquery.js"></script>
+<script src="./resources/bootstrap/js/bootstrap.min.js"></script> -->
+</head>
+<body onload="showSystemDate()">
+	<div id="header">
+		<div id="systemdate"></div>
+		<div id="logo">
+			<img id="logoimg" alt="" src="./resources/img/logo.png">
+		</div>
+		<div class="search">
+			<form>
+				<p>
+					<label><input type="search" name="query">
+						<button type="submit">Search</button></label>
+				</p>
+			</form>
+		</div>
+	</div>
+	<nav>
+		<ul>
+			<li><a href="./index.html">Home</a></li>
+			<li><a href="#blog.html">Blog</a></li>
+			<li><a href="#news.html">News</a></li>
+			<li><a href="./login.html">Login</a></li>
+		</ul>
+	</nav>
+
+	<div class='userform'>
+		<form>
+			<fieldset>
+				<legend>Login</legend>
+				<p>
+					<label>Username <input type="text" name="username" placeholder="user@domain.com" required autofocus></label>
+				</p>
+				<p>
+					<label>Password  <input type="password" name="pwd" required></label>
+				</p>
+			</fieldset>
+			<p>
+				<button type="submit">Submit</button>
+			</p>
+		</form>
+	</div>
+
+	<!-- <button id="bid" onclick="webstart()">hey click me</button> -->
+
+	<footer class="footer"> </footer>
+</body>
+</html>
