@@ -56,6 +56,13 @@ demoApp.controller('studentController', function($scope) {
 			return studentObject.firstName + " " + studentObject.lastName;
 		}
 	}
+	
+	/*$scope.reset = function(){
+		$scope.firstName = "Mahesh";
+		$scope.lastName = "Parashar";
+		$scope.email = "MaheshParashar@tutorialspoint.com";
+		}
+		$scope.reset();*/
 });
 
 /*
