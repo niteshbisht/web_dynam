@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Angular_router</title>
+<script type="text/javascript" src="../js/angular.js"></script>
+<script type="text/javascript" src="../js/angular-route.js"></script>
+<script type="text/javascript" src="../angular_apps/angular_router_app.js"></script>
+
+</head>
+<body>
+
+	<h2>Angular Sample Main App</h2>
+
+	<div ng-app="angular_router_app">
+		<p><a href="#addStudent">Add Student</a></p>
+		<p><a href="#viewStudents">View Students</a></p>
+		
+		<div ng-view></div>
+		<script type="text/ng-template" id="addStudent.htm">
+			<h2>Add Student</h2>
+			{{message}}
+		</script>
+		
+		<div ng-view></div>
+		<script type="text/ng-template" id="viewStudents.htm">
+			<h2>View Student</h2>
+			{{message}}
+		</script>
+	</div>
+</body>
+</html>
