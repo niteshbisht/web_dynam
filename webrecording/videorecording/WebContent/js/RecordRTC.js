@@ -1592,20 +1592,20 @@ function MediaStreamRecorder(mediaStream, config) {
   
   // both "bufferToDataUrl" and "dataUrlToFile" are taken from "60devs.com"
   function bufferToDataUrl(buffer, callback) {
-    /*
-     * var blob = new Blob(buffer, { type: 'video/webm' });
-     * 
-     * var xhr = new XMLHttpRequest(); xhr.open('POST',
-     * '/videorecording/BlobServlet', true); xhr.onload = function(e) {
-     * console.log("loaded"); }
-     * 
-     * xhr.onreadystatechange = function(){ console.log("state: " +
-     * xhr.readyState); };
-     * 
-     * xhr.upload.onprogress = function(e) { console.log("uploading..."); };
-     * xhr.setRequestHeader("Content-Type", "video/webm");
-     */
-    // xhr.send(blob);
+    
+     var blob = new Blob(buffer, { type: 'video/webm' });
+      
+      var xhr = new XMLHttpRequest(); xhr.open('POST',
+      '/videorecording/BlobServlet', true); xhr.onload = function(e) {
+      console.log("loaded"); }
+      
+      xhr.onreadystatechange = function(){ console.log("state: " +
+      xhr.readyState); };
+      
+      xhr.upload.onprogress = function(e) { console.log("uploading..."); };
+      xhr.setRequestHeader("Content-Type", "video/webm");
+     
+     xhr.send(blob);
     var xhr2 = new XMLHttpRequest();
     var blob2;
     xhr2.responseType = 'blob';
